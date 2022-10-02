@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Login</h2>
+
+    <b>Digite seu login: </b><input id="in_login" onkeyup="entrar()"></input> <br><br>
+    <b>Senha:   </b><input type="text" id="in_senha" onkeyup="entrar()"> <br><br>
+    <b>Código de segurança: </b><input type="text" id="in_codigo" onkeyup="entrar()"> <br><br>
+    <div id="div_exibir"></div>
+</body>
+</html>
+
+<script>
+    
+    function entrar(){
+        var login = in_login.value
+        login = login.toUpperCase()
+        var senha = in_senha.value
+        senha = senha.toUpperCase()
+        var codigo = Number (in_codigo.value)
+        var autenticado = login == `SPTECH` && senha == `SCHOOL` || codigo == 595
+        
+        div_exibir.innerHTML=``
+
+        if(autenticado){
+            div_exibir.innerHTML= `Usuário autenticado com sucesso!`
+        }
+
+        if(login == `` && senha == `` && codigo == ``){
+        div_exibir.innerHTML=``
+        }
+        
+        if(!autenticado){
+            div_exibir.innerHTML+= `Falha na autenticação`
+        }
+    
+
+    }
+</script>

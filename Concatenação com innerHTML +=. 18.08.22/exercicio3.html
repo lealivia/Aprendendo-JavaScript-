@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Nota média </title>
+</head>
+<body>
+    nota 1: <input id="in_N1"> <br><br>
+    nota 2: <input id="in_N2"> <br><br>
+
+    <button onclick=" Cal_média () "> Calcular média </button> <br>
+
+ <div id="div_VerMédia"></div>
+
+</body>
+</html>
+
+<script>
+ function Cal_média() {
+ 
+ div_VerMédia.innerHTML= `Sua média foi de ${ Number (in_N1.value) + Number (in_N2.value) / 2}`
+
+ }
+
+</script>

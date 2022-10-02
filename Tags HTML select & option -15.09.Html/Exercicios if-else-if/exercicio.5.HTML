@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nota Aluno</title>
+</head>
+<body>
+    Digite a nota: <input type="number" id="in_nota"> <br><br>
+    <button onclick="classe()">Classificar Aluno</button>
+    
+</body>
+</html>
+
+<script>
+    function classe(){
+        var nota= Number(in_nota.value)
+
+        if (nota <= 5){
+            alert('O aluno precisa de muita ajuda')
+        }else if (nota <=7){
+            alert('Aluno na média')
+        }else if (nota <= 9.5){
+            alert('Aluno acima da média')
+        }else {
+            alert('Aluno fora da curva')
+        }
+
+    }
+</script>

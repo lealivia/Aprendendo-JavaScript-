@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Carona </title>
+</head>
+<body>
+    informe a distância em Km da corrida: <input type="text" id="in_km"> <br><br>
+    informe o volume de chamadas: <input type="text" id="in_volume"> <br><br>
+    <div id="div_numero"> Insira um número de 0 a 100 </div> <br><br>
+    <button onclick="calcular()">Calcular custo da viagem </button><br>
+    <div id="div_exibir"></div>
+    <div id="div_exibir1"></div>
+
+
+</body>
+</html>
+ <script>
+    function calcular(){
+        var distancia = Number (in_km.value)
+        var volume = Number (in_volume.value)
+        var Km = distancia * 1.50
+        var corrida= Km + 7 
+    
+        
+
+        if (volume <20){ 
+            desconto = corrida * 0.05
+            corrida = corrida - desconto
+            var motorista = corrida * 0.02 
+            var liquido = corrida - motorista 
+
+            div_exibir.innerHTML= `O valor final da corrida para o cliente será R$${corrida}`
+            div_exibir1.innerHTML=`O valor descontado do motorista será ${motorista}, logo ele receberá um valor liquido de ${liquido}`
+        } else {
+            var valor = corrida * 0.50
+            var valor = valor + corrida 
+            var motorista = valor * 0.02
+            var liquido = valor - motorista  
+
+            div_exibir.innerHTML= `O valor final da corrida para o cliente será R$${valor}`
+            div_exibir1.innerHTML=`O valor descontado do motorista será ${motorista}, logo ele receberá um valor liquido de ${liquido}`
+        }
+
+
+    }
+ </script>

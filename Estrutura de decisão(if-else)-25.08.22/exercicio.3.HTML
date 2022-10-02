@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Norma Ligna</title>
+</head>
+<body>
+    Nota1: <input type="" id="in_N1">
+    Nota2: <input type="text" id="in_N2">
+    Nota3: <input type="text" id="in_N3">
+    <button onclick="analise()"> Analisar desempenho </button>
+    <div id="div_para"></div>
+    <div id="div_calcular"></div>
+</body>
+</html>
+<script>
+    function analise() {
+        var nota1= Number (in_N1.value)
+        var nota2= Number (in_N2.value)
+        var nota3= Number (in_N3.value)
+
+        var Media=  nota1+nota2+nota3/3
+        div_calcular.innerHTML+= `Sua média foi de ${Media}` 
+
+        if(Media > 9.4){
+            div_para.innerHTML+= "Parabéns, você é fora de série!"
+        }
+    }
+</script>

@@ -1,0 +1,34 @@
+Calcule a média de livros vendidos de uma biblioteca nos dias de venda mais intesos, quinta-feira, sexta-feira e sabado.  Crie um programa que:
+a)Pergunte quantos livros foram vendidos em cada dia da semana (Crie três campos para os dia da semana)
+b)Calcule a média de livros vendidos nos três dia da semana
+c)Ao clicar no botão média, exiba um alerta com uma frase como esta: "A media de livros vendidos nos três dias é X" 
+--> 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Biblioteca </title>
+</head>
+<body>
+
+    Livros vendidos Quinta: <input type="text" id="in_Quin"> <br>
+    Livros vendidos Sexta: <input type="text" id="in_Sex"> <br>
+    Livros vendidos Sabado: <input type="text" id="in_Sab"> <br>
+    <button onclick="Calcule ()"> Calcule</button>
+</body>
+</html>
+
+<script>
+    function Calcule() {
+        var Quinta = Number (in_Quin)
+        var Sexta = in_Sex
+        var Sabado = in_Sab 
+
+
+        alert(`A média de livros vendidos nos três dias é ${ (Number (in_Quin.value) ) + ( Number (in_Sex.value)) + (Number (in_Sab.value)) / 2}`)
+    }
+
+
+</script>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dieta</title>
+</head>
+<body>
+    Quantos pães por dia: <input type="number" id="in_paes"> <br><br>
+    Quantos pacotes de bolacha por dia: <input type="number" id="in_bolacha"> <br><br>
+    Quantos copos de achocolatado tem tomado por dia: <input type="number" id="in_achoco"> <br><br>
+
+    <button onclick="analisar()">Verificar calorias </button>
+    <div id="div_exibir"></div>
+</body>
+</html>
+
+<script>
+    function analisar(){
+        var paes = Number (in_paes.value)
+        var bolacha = Number (in_bolacha.value)
+        var copo = Number (in_achoco.value)
+        var caloriaP = 50 * paes
+        var caloriaB = 80 * bolacha
+        var caloriaC = 70 * copo
+        var total= caloriaP + caloriaB + caloriaC
+        
+        if (total<= 200){
+            div_exibir.innerHTML= 'Parabéns, vai sair em forma da quarentena!'
+        }else if (total <=400) {
+            div_exibir.innerHTML= 'Cuidado vai sair mais fofinho(a) da quarentena!' 
+        }else {
+            div_exibir.innerHTML='Bom, acho muitos não vão te reconhecer após a quarentena'
+        }
+    }
+</script>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Aposentadoria </title>
+</head>
+<body>
+    digite sua idade: <input id="in_idade"> <br><br>
+    <button onclick="apo_homem()"> Aposentadoria homem </button> <br> <br>
+    <button onclick="apo_mulher()"> Aposentadoria Mulher </button> <br> <br>
+
+</body>
+</html>
+<script>
+    function apo_homem(){
+
+        alert (`Faltam ${ Number (70) - Number (in_idade.value)} anos`)
+    }
+
+    function apo_mulher(){
+     
+        alert (`Faltam ${ Number (60) - Number (in_idade.value)}`)
+
+    }
+</script>

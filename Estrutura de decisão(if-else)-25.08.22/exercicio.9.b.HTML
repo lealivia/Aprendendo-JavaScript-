@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SITCOM</title>
+</head>
+<body>
+    Informe última série (SITCOM) que assistiu? <input type="text" id="in_serie"><br> <br>
+    Total de episodios que assistiu: <input type="text" id="in_totalep"> <br> <br>
+    <button onclick="verificar()"> Verificar nível </button> <br>
+    <div id="div_gostamt"></div>
+</body>
+</html>
+<script>
+    function verificar(){
+        var episodio= Number (in_totalep.value)
+        var minutos = episodio * 0.366667
+        var horas= minutos / 60
+        
+        div_gostamt.innerHTML= `Vejo que você gosta da série ${in_serie.value}`
+
+        if (horas > 30){
+            div_gostamt.innerHTML= `Uau você realmente gosta dessa série!`
+
+        }
+    }
+</script>

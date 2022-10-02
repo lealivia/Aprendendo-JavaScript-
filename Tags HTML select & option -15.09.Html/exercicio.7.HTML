@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Questão 7</title>
+</head>
+
+<body>
+    <h1>Times de São Paulo</h1>
+    <select name="" id="sel_times">
+        <option value="https://i.pinimg.com/originals/91/4a/7f/914a7f65991f97a6a8690b8511ee19b7.png">Botafogo</option>
+        <option value="https://cf.shopee.com.br/file/68ab26eb5f76669730ddccdc84559a2b">Corinthians</option>
+        <option value="https://a.espncdn.com/i/teamlogos/soccer/500/18126.png">Ferroviária</option>
+        <option value="https://ituanofc.com/images/brand-icon.png">Ituano</option>
+    </select>
+    <button onclick="escudo()">Ver escudo</button>
+    <br>
+    <img src="" id="img_escudo" style="height: 200px;">
+
+</body>
+
+</html>
+<script>
+
+    function escudo() {
+        img_escudo.src = sel_times.value
+    }
+
+</script>
+

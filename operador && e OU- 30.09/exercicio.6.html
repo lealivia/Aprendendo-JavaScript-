@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    Digite o nome do produto: <input type="text" id="in_produto"><br><br>
+    Insira o preço do produto: <input type="number" id="in_original"> <br><br>
+    Insira o cupom de desconto: <input type="text" id="in_desconto"> <br><br>
+    <button onclick="aplicar()">Aplicar desconto</button>
+    <div id="div_exibir"></div>
+</body>
+</html>
+
+<script>
+    function aplicar(){
+        div_exibir.innerHTML= ``
+        var produto = in_produto.value
+        produto = produto.toLowerCase()
+        var original = Number (in_original.value)
+        var cupom = in_desconto.value
+        cupom = cupom.toUpperCase()
+        var geral = produto == 'tênis'|| produto == 'livros'|| produto == 'material escolar'
+        var tecnologicos = produto == 'celular'|| produto == 'notebook'|| produto == 'tablet' 
+        var CupomG = cupom =='GERAL_10'
+        var CupomT = cupom =='TECH_19'
+        
+        
+        if(produto == ''){
+            alert('Insira um produto para prosseguir!')
+        }
+        
+        if(original == ''){
+            alert('Insira um preço para prosseguir!')
+        }
+        
+        if (cupom == ''){ 
+            alert('Insira um cupom para prosseguir!')
+        }
+        
+        
+
+        if( geral && CupomG){
+            
+            desconto = original - (original * 0.10)
+            div_exibir.innerHTML= `Cupom para produtos em geral aplicado! Preço final será R$${desconto}`
+            
+        }else if (tecnologicos && CupomT ){
+            
+            desconto = original - (original * 0.19)
+            div_exibir.innerHTML=`Cupom para produtos tecnológicos foi aplicado! Preço final será R$${desconto}`
+
+        } else if (!geral && !tecnologicos || !CupomT && !CupomG){
+            
+            div_exibir.innerHTML=`Cupom não aplicado! Preencha os campos e tente novamente!`
+        }
+    }
+
+</script>

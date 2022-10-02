@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="exercicio8.CSS">
+    <title>Peso médio 2.0</title>
+</head>
+<body>
+    Quantidade de homens no elevador: <input type="text" id="in_qtdh"><br> <br>
+    quantidade de mulheres no elevador: <input type="text" id="in_qtdm"><br> <br>
+    <button onclick="analisar()"> Analisar peso  </button>
+    <div id="div_exibir"></div>
+    <div id="div_descer" class="estilo"></div>
+    <div id="div_vermelho" class="frase"></div>
+</body>
+</html>
+<script>
+    function analisar (){
+        div_descer.innerHTML=''
+
+        var homens= Number (in_qtdh.value)
+        var mulheres= Number (in_qtdm.value)
+        var total= (homens * 80) + (mulheres * 60)
+
+        div_exibir.innerHTML= `Este elevador suporta 800kg e o peso estimado desta lotação é de ${total}`
+
+        if (total >800 && total <1000){
+            div_descer.innerHTML+= `<br> Será necessário descer alguém para que o elevador se movimente`
+        }
+         
+        if (total >=1000){
+            div_vermelho.innerHTML+= `<br> Será necessário descer alguém para que o elevador se movimente`
+            
+        }
+        
+    }
+</script>

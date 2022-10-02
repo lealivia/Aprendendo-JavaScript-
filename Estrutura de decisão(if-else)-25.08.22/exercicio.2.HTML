@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amin tiroso</title>
+</head>
+<body>
+    Quantas latinhas bebeu: <input type="text" id="in_lat">
+    <button onclick="qtd_bebeu()"> Quantos refris? </button>
+    <div id="div_qtdano"></div>
+    <div id="div_alerta"></div>
+    
+</body>
+</html>
+
+<script>
+    function qtd_bebeu(){
+     
+     
+        var bebeu = Number (in_lat.value) *365
+        div_qtdano.innerHTML= bebeu 
+     
+    if (bebeu >= 500) {
+        div_alerta.innerHTML += 'Cuidado com a diabete!'
+    }
+    }
+</script>

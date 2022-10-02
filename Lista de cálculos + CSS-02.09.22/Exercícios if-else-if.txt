@@ -1,0 +1,102 @@
+1. Você foi contratado pela concessionária “Wen Rac” para criar um sistema que irá ajudar no controle das vendas da empresa. Crie um programa HTML/JS onde: 
+
+a) O usuário informa seu nome; 
+
+b) O usuário informa o modelo do carro que deseja comprar; 
+
+c) O usuário informa o valor do carro a ser comprado; 
+
+d) O usuário informa um cupom de desconto para ser aplicado;  
+
+e) Ao clicar no botão “efetuar compra”, faça as devidas validações, onde:  
+
+  e.1) Se o modelo do carro informado em b) estiver vazio, exiba em um alerta a frase “Informe o modelo do carro para prosseguir com a compra!”, e encerre (não faça mais nada); 
+
+  e.2) Se o valor do carro informado em c) for menor que 5000, exiba em um alerta a frase “Valor inválido! O carro está barato demais”, e encerre (não faça mais nada);
+
+  e.3) Se o cupom informado em d) for “CARRO_NOVO”, exiba em um alerta a frase “Cupom válido! Desconto de 11% aplicado!”, e faça o cálculo para aplicar 11% de desconto em cima do preço informado em c) e prossiga para f).  
+Caso contrário (se o cupom inserido for diferente de “CARRO_NOVO”), exiba em um alerta a frase “Cupom inválido! Desconto não será aplicado!” e prossiga para f); 
+
+f) Após realizar as devidas validações, exiba na página uma frase como esta: 
+
+    “Olá, NOME! O carro de modelo XXXX, de valor padrão R$YY,YY, sairá por R$ZZ,ZZ”
+
+Obs: NOME é o nome do usuário informado em a), XXXX é o modelo do carro informado em b), YY,YY é o valor do carro informado em c) e ZZ,ZZ é o valor final, após validar o cupom de desconto em e.3);  
+
+g) A frase a ser exibida em f) deve aplicar na frase uma estilização de texto de cor verde e itálico caso o cupom de desconto tenha sido aceito. Caso contrário, aplicar na frase uma estilização de texto de cor vermelha e negrito. 
+
+
+
+
+
+2.  Crie um programa em HTML/JS que simule uma determinada situação na compra de um carro financiado... 
+
+..No Brasil, devido ao "status" que carro dá e à falta de educação financeira do brasileiro médio, é comum 2 erros financeiros gritantes na compra de carros: Comprar um carro 0km e comprar via financiamento, parcelando em muitas vezes, como em 24x ou 36x por exemplo. 
+
+Assim, seu programa vai mostrar ao usuário, de maneira gráfica, o quão ruim é comprar um carro 0km e financiado: 
+
+a) Solicite o valor do carro a vista; 
+
+b) Solicite a taxa de juros a.m. (ao mês); 
+
+c) Solicite a quantidade de parcelas; 
+
+d) Ao clicar em "Calcular prejú": 
+
+d.1) Exiba uma frase como esta: 
+
+    "Seu carro vai sair por um total de R$AA,AA. Após 1 mês, ele já vai valer só R$BB,BB. Porque comprou financiado, vai pagar o correspondente a CCCC carros" 
+
+  Obs:    
+
+    AA,AA - O total pago após o final do financiamento (soma das parcelas).  
+
+   #Ficadica: A taxa de juros é simplesmente a razão de uma PG (se a taxa for 5, a razão é 1.05, se a taxa for 3, a razão é 1.03, se a taxa for 6,5, a razão é 1.065) e o primeiro termo da PG num financiamento é sempre o valor do bem dividido pela quantidade de parcelas. Exiba este valor com 2 casas decimais; 
+
+   BB,BB - O valor do carro a vista menos 20%. #Ficadica: Para "tirar" 20% de um valor, basta obter 80% dele.
+
+   CCCC - A quantidade de "carros" que seriam pagos ao financiar, se comparado com o valor a vista.  
+
+   Ex: À vista, o valor de 1 carro seria 40.000, mas financiado ficou em 80.000. Nesse caso, CCCC tem que dar 2 (compraria 2 carros).  
+
+   Ex2: À vista, o valor de 1 carro seria 50.000, mas financiado ficou em 140.000. Nesse caso, CCCC tem que dar 2.8 (compraria 2.8 carros).  
+
+   #ficadica: para calcular este valor, basta fazer a soma dos termos de uma PG finita (veja aqui). 
+
+ -> Fórmula para calcular a soma dos termos da PG
+
+
+
+3. A 4Migas é a melhor sorveteria do Ipiranga, onde sua especialidade são os sorvetes em massa que são vendidos por peso. Crie um programa em HTML/JS que auxilie a calcular o custo do sorvete, no qual: 
+
+a) Receba o valor por grama de sorvete; 
+
+b) Receba o peso do sorvete (quantidade de gramas); 
+
+c) Calcule o custo do sorvete; 
+
+d) Caso o valor seja maior que R$10,00 exiba em um alerta a mensagem “Esse sorvete vai comprometer a mesada. Caso contrário, exiba em um alerta a mensagem “Hoje você está maneirando...”; 
+
+
+
+
+
+4. A 4Migas é a melhor sorveteria do Ipiranga, onde sua especialidade são os sorvetes em massa que são vendidos por peso. Crie um programa em HTML/JS que auxilie 4Migas a calcular o custo do sorvete na semana promocional de cobertura de chocolate e sorvetes gourmet, sendo: 
+
+a) Receba o valor de referência por grama de sorvete; 
+
+b) Receba o peso do sorvete (quantidade de gramas); 
+
+c) Receba o tipo de cobertura; 
+
+d) Receba o tipo de sorvete; 
+
+
+e) Se o tipo do sorvete for “G” (gourmet), deve adicionar 11% ao preço por grama de sorvete informado em a). Caso contrário, deve subtrair 10% ao preço por grama de sorvete informado em a); 
+
+f) Calcular o preço por grama de sorvete sendo que: Se o tipo de cobertura for diferente de “C” (chocolate) o adicionar 0,01 ao preço de referência por grama de sorvete informado em a). Caso contrário, usar o próprio preço de referência informado em a). 
+
+
+g) Calcule o custo do sorvete. 
+
+h) Se o valor for maior que R$10,00 exiba na página a mensagem “O seu sorvete vai custar R$ XX,XX e vai comprometer a mesada" em cor verde. Caso contrário, exiba na página a mensagem “Hoje você está maneirando hoje, gastou somente R$YY,YY.” em cor azul. 

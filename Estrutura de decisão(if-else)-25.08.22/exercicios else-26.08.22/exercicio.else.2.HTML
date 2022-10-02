@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="exercicio.else.2.CSS">
+    <title>Banco itado</title>
+</head>
+<body>
+    Saldo da conta: <input type="text" id="in_saldo"><br><br>
+    Valor do débito: <input type="text" id="in_debito"><br><br>
+    <button onclick="analisar()"> Analisar conta </button><br><br>
+    <div id="div_exibir" class="estilo"></div>
+    <div id="div_exibir1" class="positivo" ></div>
+
+</body>
+</html>
+<script>
+    function analisar(){
+        var saldo= Number (in_saldo.value)
+        var debito= Number (in_debito.value)
+        var total= saldo-debito
+
+        div_exibir.innerHTML=``
+        
+        if(total <=0){
+            div_exibir.innerHTML=`O saldo atual da conta corrente é ${total}`
+        } else {
+            div_exibir1.innerHTML=` O saldo atual da conta corrente é ${total}`
+        }
+    
+    }
+</script>

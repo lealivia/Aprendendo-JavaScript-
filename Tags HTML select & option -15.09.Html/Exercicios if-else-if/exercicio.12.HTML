@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clique</title>
+</head>
+<body>
+    <div id="div_exibir1"> Você já clicou 0 vezes</div><br><br>
+    <button onclick="clique()"> Clica neu</button><br><br>
+    <div id="div_exibir"></div>
+
+
+</body>
+</html>
+
+<script>
+    var cliques = 0
+
+    function clique (){
+        cliques++;
+
+         if (cliques < 5){
+            div_exibir.innerHTML= `Você já clicou ${cliques} vezes <br>`
+            div_exibir1.innerHTML= `Dedo fraquinho, hein`
+         }else if (cliques <=10){
+            div_exibir.innerHTML= `Você já clicou ${cliques} vezes <br>`
+            div_exibir1.innerHTML= `Dedo bom, mano`
+         }else if (cliques <=15){
+            div_exibir.innerHTML= `Você já clicou ${cliques} vezes <br>`
+            div_exibir1.innerHTML= `Gosta de clicar, hein!`
+         }else {
+            div_exibir.innerHTML= `Você já clicou ${cliques} vezes <br>`
+            div_exibir1.innerHTML= `Eita dedo nervoso!`
+         } 
+    }
+    
+</script>

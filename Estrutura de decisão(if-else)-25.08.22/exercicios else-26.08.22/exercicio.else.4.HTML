@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Frequência do Aluno</title>
+</head>
+<body>
+    Digite sua frequência: <input type="text" id="in_freq">
+    <button onclick="analisar()"> Analisar frequência</button>
+    <div id="div_exibir"></div>
+    <div id="div_imagem"></div>
+</body>
+</html>
+<script>
+    function analisar(){
+        var frequencia= Number (in_freq.value)
+
+        if(frequencia <50){
+            div_imagem.innerHTML=`<br> <img src= https://img.freepik.com/fotos-gratis/turista-apontando-para-cima_1368-7017.jpg?w=2000" alt="" width="200px">`
+
+        } else{
+            div_imagem.innerHTML=`<br> <img src="https://blog.redebatista.edu.br/wp-content/uploads/2018/12/edd.jpg" alt="" width="200px">`
+        }
+    }
+</script>

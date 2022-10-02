@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    Insira seu nome: <input type="text" id="in_nome"><br><br>
+    Insira a sua altura: <input type="text" id="in_altura"> <br><br>
+    Altura inicial: <input type="text" id="in_inicial"> <br><br>
+    altura final: <input type="text" id="in_final"> <br><br>
+    <button onclick="cadastro()">Cadastrar</button> <br><br>
+    <div id="div_mensagem"></div><br><br>
+</body>
+</html>
+<script>
+    function cadastro(){
+        var nome = in_nome.value
+        var pilotoA= Number (in_altura.value).toFixed(2)
+        var alturaF = Number (in_final.value)
+        var alturaI= Number (in_inicial.value)
+        
+
+
+        if (alturaI >= 1 && alturaF > alturaI){ 
+            if (pilotoA > alturaI && pilotoA <= alturaF){
+            div_mensagem.innerHTML=`O candidato ${nome} com altura de ${pilotoA} participará do processo de seleção de piloto`
+        } else {
+            div_mensagem.innerHTML= `Infelizmente o candidato ${nome} com altura de ${pilotoA} não atende os requisitos`
+        }} 
+        else {
+            alert(`Preencher campo altura Inicial e Final`)
+        } 
+        
+
+        
+    }
+</script>

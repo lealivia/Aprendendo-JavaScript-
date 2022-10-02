@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DESAFIO</title>
+</head>
+<body>
+    <select name="" id="sel_combo">
+        <option value="">--selecione--</option>
+        <option value="1">Integral</option>
+        <option value="2">Branco</option>
+    </select> <br><br>
+   
+    insira o tempo de cozimento em minutos: <input type="text" id="in_tempo"><br><br>
+
+    quantidade de sal usada em gramas: <input type="text" id="in_sal"><br><br>
+
+    <button onclick="avaliar()">avaliar arroz </button> <br><br>
+    <div id="div_exibir"></div> <br>
+    <img src="" id="img_arroz" alt="" height="200px">
+    <img src="" id="img_jacquin" height="200px">
+     
+</body> 
+</html>
+<script>
+    function avaliar(){
+        var tempo = Number (in_tempo.value)
+        var sal = Number (in_sal.value)
+        var arroz = sel_combo.value 
+        var perfeitoB = arroz == 2 && tempo == 10 && sal <= 10 
+        var perfeitoI = arroz == 1 && tempo == 20 && sal <=15
+        
+        if(''){
+            div_exibir.innerHTML= ''
+        }
+
+        if (perfeitoB){
+            div_exibir.innerHTML='Arroz perfeito'
+            img_arroz.src="https://img.itdg.com.br/tdg/images/recipes/000/166/751/357546/357546_original.jpg?mode=crop&width=710&height=400"
+
+        }else if (perfeitoI){
+            div_exibir.innerHTML+= 'Arroz perfeito'
+            img_arroz.src="https://n2c8z6e5.rocketcdn.me/wp-content/uploads/2021/08/closeup-a-plate-of-steamed-thai-brown-rice-for-the-concept-of-well-being.jpg"
+            
+        }
+
+        if (!perfeitoB && !perfeitoI){
+            div_exibir.innerHTML='Seu arroz não está perfeito'
+            img_arroz.src=""
+            img_jacquin.src="https://rd1.com.br/wp-content/uploads/2021/02/20210211-rd1-pesadelo-na-cozinha-erick-jacquin.png"
+        }
+    }
+</script>

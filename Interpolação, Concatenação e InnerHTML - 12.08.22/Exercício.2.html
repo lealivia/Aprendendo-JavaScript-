@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade interpolação 2 12.08</title>
+</head>
+<body>
+    filme favorito do usuário <br><br>
+Filme favorito: <input type="" id="in_filme_favorito"> <br>
+Quantas vezes asssitiu: <input type="text" id="in_quantas_vezes_assistiu"> <br>
+Ultima vez que asssitiu: <input type="text" id="in_ultima_vez_que_assistiu"> <br>
+
+<button onclick="Analisar_filme()"> Analisar filme </button>
+
+</body>
+</html>
+
+<script>
+    function Analisar_filme(){
+        alert (` Você assistiu ${in_filme_favorito.value} pela última vez em ${in_ultima_vez_que_assistiu.value}, e já assistiu ${in_quantas_vezes_assistiu.value} vezes `)
+    }
+</script>

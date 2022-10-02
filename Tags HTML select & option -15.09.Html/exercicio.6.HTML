@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estações</title>
+</head>
+
+<body>
+    <h1>Estações do ano</h1>
+    <select id="sel_estacoes" onchange="estacao()">
+        <option value="https://salerno.occhionotizie.it/wp-content/uploads/sites/2/2018/03/Primavera-1000x600.jpg"> Primavera</option>
+        <option value="https://jeonline.com.br/site/uploads/posts/6596_22122015154333.jpg"> Verão</option>
+        <option value="https://static.mundoeducacao.uol.com.br/mundoeducacao/2020/11/folhas.jpg"> Outono</option>
+        <option value="https://t5z6q4c2.rocketcdn.me/wp-content/uploads/2020/04/inverno-datas-e-caracteristicas.jpg"> Inverno</option>
+    </select>
+    <br>
+    <img src="" id="img_estacao" style="height: 200px;">
+
+</body>
+
+</html>
+<script>
+    function estacao() {
+        img_estacao.src = sel_estacoes.value
+    }
+</script>
+

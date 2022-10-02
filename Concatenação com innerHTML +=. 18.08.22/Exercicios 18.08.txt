@@ -1,0 +1,91 @@
+1. Crie um programa em HTML/JS que:
+a) Tenha uma caixinha de entrada de dados (tag input) com o texto indicativo "Digite uma memória pro seu diário" antes dela
+
+b) Ao clicar no botão "Registrar Memória", o que está digitado na caixinha deve ir para baixo do botão. A cada vez que se clicar o novo registro vai para baixo do anterior, mantendo-se todos
+
+
+
+2. Crie um programa em HTML/JS que:
+a) Solicite o sabor de uma pizza
+b) Solicite o preço da pizza
+c) Solicite a quantidade de amigos que vai rachar a conta
+d) Ao clicar em "Pedir Pizza", exiba abaixo do botão um texto como este: "A pizza de X custa R$Y e cada amigo vai pagar R$Z"
+
+
+
+3. Crie um programa em HTML/JS que:
+a) Solicite 2 notas do aluno
+b) Ao clicar em "Ver média", exiba abaixo dele a frase "Sua média foi de X", onde X é a média aritmética entre as 2 notas
+
+ 
+4. Crie um programa que:
+a) Solicite a idade do usuário
+b) Deve haver 2 botões abaixo: "Aposentadoria Homem" e "Aposentadoria Mulher"
+c) No primeiro botão, calcule e exiba um alert com o tempo que falta para se aposentar, se homem. Considere que um homem se aposenta com 70 anos
+d) No segundo botão, calcule e exiba um alert com o tempo que falta para se aposentar, se mulher. Considere que um mulher se aposenta com 60 anos
+
+ 
+5. Refaça a questão anterior, melhorando-a de tal forma que, ao invés de mostrar 2 alertas, exiba o seguinte texto ao final:
+  Se for homem faltam X anos p/ aposentar
+  Se for mulher faltam Y anos p/ aposentar
+ 
+
+6. Um estudante recebeu o Bilhete Único de estudante pela primeira vez e deseja saber quanto vai economizar por mês. O valor para estudante é metade do valor da passagem. Crie um programa que:
+a) Pergunte a ele o valor da passagem
+b) Pergunte a ele quantas viagens fará por mês
+c) Ao clicar num botão "Ver economia", deve ver um alerta com uma frase como esta: "Você economizará R$X por mês"
+
+
+7. No desenho animado Dragon Ball, existem personagens de uma raça chamada Sayajins. Eles possuem a seguinte característica: Quando estão em sua "forma normal", sua força (ou "ki") é normal. Quando estão na forma Super Sayajin, sua força (ou "ki") aumenta em 50x. Quando estão na forma Super Sayajin 2, sua força (ou "ki") aumenta em 100x. Crie um programa que ajude a calcular o "ki" de um guerreiro Sayajin.
+a) Solicite o nome do guerreiro
+b) Solicite o ki normal do guerreiro
+c) Ao clicar num botão "Ver ki em cada forma", exiba um alerta para a forma Super Sayajin e outro para Super Sayajin 2, exibindo seus respectivos "ki". Em ambas exiba o nome do guerreiro também
+
+
+8. Na faculdade SPTech o aluno tem 2 notas: A da "avaliação continuada" e a da "avaliação semestral". A média final é a soma simples entre 40% da "continuada" e 60% da "semestral". Assim, para ajudar um aluno para saber o quanto precisa para passar e estagiar em empresas como Easynvest, C6Bank, Tivit, Banco Safra, Deloitte, HP etc, crie um programa que:
+a) Solicite a nota que ele tirou na "continuada" e na "semestral"
+b) Solicite o nome do aluno
+c) Calcule sua média
+d) Exiba uma frase como esta "A média de NOME será de MEDIA". Onde NOME é o valor informado em b) e MEDIA, o valor calculado em c)
+
+
+9. Crie um programa que:
+a) Solicite 2 números ao usuário
+b) tenha um botão para cada operação aritmética. Ao clicar em algum deles, exibir ABAIXO do botão UMA dessas frases:
+
+   A soma entre X e Y é Z
+   A diferença entre X e Y é Z
+   O produto entre X e Y é Z
+   A razão entre X e Y é Z         
+ 
+ 
+10 (Desafio). Túlio Milde é muito preocupado com o meio ambiente. E, ao invés de ficar postando memes e textões contra o governo por conta de desmatamentos e queimadas, resolveu fazer ações concretas em sua vida. A primeira foi economizar água da torneira, evitando desperdício. Túlio descobriu que uma torneira pingando desperdiça de em média 15 litros de água por minuto. Ele tem 3 torneiras em casa.
+
+Assim, crie um programa que:
+a) Pergunte quantos minutos cada torneira ficou pingando (são 3 campos de entrada, um para cada torneira)
+b) Calcule o desperdício total conforme os valores informados em a)
+c) Exiba um alerta com uma frase como esta: "Suas 3 torneiras, juntas, desperdiçaram X litros de água"
+
+ 
+
+ 11. Um clube de futebol precisa de um programa para saber quanto arrecadou por jogo. Assim, crie um programa que:
+a) Pergunte ao usuário a quantidade de ingressos de estudante vendidos
+b) Pergunte ao usuário a quantidade de ingressos comuns vendidos
+c) Pergunte ao usuário o valor do ingresso comum
+d) Calcule a arrecadação, considerando que um ingresso de estudante custa metade do ingresso comum
+e) Exiba um alerta com uma frase assim: "A arrecadação foi de R$X"
+
+ 
+12. Crie um programa que:
+a) Solicite ao usuário seu peso e altura
+b) Ao clicar no botão "IMC Homem", calcule e exiba seu IMC considerando que é um homem
+c) Ao clicar no botão "IMC Mulher", calcule e exiba seu IMC considerando que é uma mulher
+Use a fórmula de IMC em https://centrodeobesidadeediabetes.org.br/tudo-sobre-obesidade/calculadora-de-imc/. E considere que o IMC da mulher é sempre 10% menor que o do homem.
+
+
+13. Antônia Legre vai começar em seu primeiro emprego com carteira assinada após ser efetivada num estágio numa empresa de TI parceira da SPTech. Enfim ela descobriu que quando um funcionário tem um salário de R$3.000,00, na verdade não cai esse valor em sua conta, pois pela CLT temos vários descontos. Crie um programa que:
+a) Solicite o valor do salário bruto do usuário
+b) Calcule o valor do desconto de INSS (previdência), que é 10% do valor do bruto
+c) Calcule o valor do desconto de IR (imposto de renda), que é 20% do valor do bruto
+d) Calcule o valor do imposto sindical, que é 1/30 do bruto
+e) Exiba um alerta com uma frase como esta: "Apesar de seu bruto ser R$X, após os descontos, você receberá somente R$Y"

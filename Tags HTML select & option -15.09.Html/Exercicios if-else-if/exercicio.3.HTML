@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temperatura </title>
+</head>
+<body>
+    insira a temperatura atual: <input type="number" id="in_temp" onkeyup="analise()">
+    <div id="div_temp"></div>
+</body>
+</html>
+<script>
+    function analise(){
+        var temperatura= Number(in_temp.value)
+        
+        if (temperatura <= 14){
+            div_temp.innerHTML= "Congelante"
+        }else if (temperatura <=21){
+            div_temp.innerHTML= "Com frio"
+        }else if (temperatura <= 24){
+            div_temp.innerHTML= "Confortável"
+        }else if (temperatura <= 31){
+            div_temp.innerHTML= "Com calor"
+        }else {
+            div_temp.innerHTML= "Calor escaldante"
+        }
+        
+    }
+
+   
+
+</script>

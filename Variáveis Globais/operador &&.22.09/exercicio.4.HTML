@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Você é vegano(a)?</h2>
+     
+    O que você consome no café: <select  id="sel_cafe" onchange="combo()">
+        <option value="">--Selecione--</option>
+        <option value="nv">Ovos </option>
+        <option value="v">Leite de Arroz</option>
+        <option value="nv">Bacon</option>
+    </select> <br> <br>
+
+O que você consome no almoço: <select id="sel_almoco" onchange="combo()">
+        <option value="">--Selecione--</option>
+        <option value="nv">Bife</option>
+        <option value="v">Hamburguer de soja</option>
+        <option value="nv">Frango grelhado</option>
+    </select> <br><br>
+
+O que você consome na janta: <select id="sel_janta" onchange="combo()">
+        <option value="">--Selecione--</option>
+        <option value="v">Picanha de soja</option>
+        <option value="nv">Cupim</option>
+        <option value="nv">Coração</option>
+    </select> <br> <br>
+
+</body>
+</html>
+
+<script>
+    function combo(){
+        var cafe = sel_cafe.value
+        var almoco = sel_almoco.value
+        var janta = sel_janta.value 
+
+        if (cafe == '' && almoco =='' && janta == ``){
+            alert('')
+        }
+
+        if (cafe == "v" && almoco == "v" && janta == "v" ){
+        alert(`Sim, você é vegano(a)`)
+        }else {
+            alert(`NÃO, você não é vegano(a)`)
+        }
+    }
+</script>

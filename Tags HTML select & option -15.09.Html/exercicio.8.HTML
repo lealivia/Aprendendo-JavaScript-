@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Questão 8</title>
+</head>
+<body>
+    <h1>Descontos de Carteira Assinada</h1>
+    Digite seu salário <input type="number" id="in_salario">
+    <select name="" id="sel_descontos">
+        <option value="0.1">INSS</option>
+        <option value="0.2 ">IR</option>
+        <option value="0.05">VT</option>
+    </select>
+    <button onclick="Ver_Desconto()">Ver Desconto</button>
+    <br>
+    <div id="resultado"></div>
+</body>
+</html>
+<script>
+function Ver_Desconto() {
+    var salario = Number (in_salario.value)
+    var desconto = Number (sel_descontos.value)
+    var muliplicacao= salario * desconto
+    resultado.innerHTML= ` Valor desse desconto: R$${muliplicacao.toFixed(2)}`
+}
+</script>
+

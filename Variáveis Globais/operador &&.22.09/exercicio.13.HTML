@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    Quantidade de tempo trabalhado: <input placeholder="Quantidade em anos" id="in_qtdAnos"> <br><br>
+    Quantidade de trigo em Kilos: <input placeholder="por hectare..." id="in_qtdTrigo"> <br><br>
+    Dias que houveram faltas: <input placeholder="faltas" id="in_faltas"><br><br>
+    <button onclick="match()">Deu match?</button>
+    <div id="div_exibir"></div>
+</body>
+</html>
+
+<script>
+    function match(){
+        var ano= Number (in_qtdAnos.value)
+        var kilos = Number (in_qtdTrigo.value)
+        var faltas = Number (in_faltas.value)
+
+        if(ano > 5 && kilos >= 300 && faltas <=5){
+            div_exibir.innerHTML=`Minha filha será sua! <br> <img src="https://i.pinimg.com/736x/8d/08/9a/8d089a012da70f41a9f237c753fdc729.jpg" width= 280px </img>`
+        }else {
+            div_exibir.innerHTML=`Deu ruim! Trabalhe mais 2 anos! <br> <img src="https://pbs.twimg.com/profile_images/3486236798/e6ee9d5c95134fd4c0c316eaff5be8df_400x400.jpeg" width:200px </img>`
+        }
+    }
+
+</script>

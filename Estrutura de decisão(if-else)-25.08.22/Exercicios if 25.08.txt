@@ -1,0 +1,215 @@
+Exercícios - lista "if"
+0. Agora você é o professor!
+
+a) Crie um enunciado de questão que requer dos conceitos abordados até agora.
+
+b) Escolha um colega e passe o enunciado pra ele fazer.
+
+c) E você resolve o que algum outro colega elaborou.
+
+d) Você corrige a solução do colega
+
+OBS: Aqui no moodle só enviem o enunciado.
+
+
+
+1. Crie um programa que:
+
+a) Pergunte ao usuário sua idade.
+
+b) Ao clicar num botão "Ir pra festa":
+
+ * pode acontecer de aparecer um alert com a frase "Pedir permissão pro responsável" caso a idade for menor que 18
+
+ * sempre vai aparecer um alert com a palavra "#partiuFesta" ao final
+
+ 
+
+ 
+
+2. Amin Tiroso bebe com certa frequência e quer saber quanto consome de refrigerante em 1 ano. Para ajudá-lo a saber essa informação, crie um programa o qual:  
+
+a) Pergunte quantas latinhas de refrigerante toma por dia
+
+b) Ao clicar num botão "Quantos refris?", calcule a quantidade de refrigerante que ele consome em 1 ano, considerando que 1 ano possui 365 dias
+
+c) Exiba na página a quantidade de latinhas que ele consome por ano
+
+d) Somente caso a quantidade for a partir de 500, exiba também a frase: "Cuidado com a diabetes!"
+
+ 
+
+ 
+
+3. Norma Ligna é muito estudiosa e sua meta é sempre ser uma aluna fora de série. Na faculdade onde estuda os "fora de série" são os alunos com média acima de 9,4. Portanto, para ajudá-la, crie um programa o qual:
+
+a) Pergunte o valor de 3 notas
+
+b) Ao clicar num botão "Analisar desempenho", calcule a média entre as notas e exiba na tela a frase "Sua média foi de X", onde X é a média calculada
+
+c) Somente caso a média for acima de 9,4 exibir também a frase "Parabéns, você é fora de série!"
+
+ 
+
+ 
+
+4. Um grupo de amigos costuma (ou costumava, antes do Covid19) a se reunir a casa de um deles para pedir e comer pizza. Só que eles tinham um trato de que o valor da pizza, quando dividido entre os amigos, não passe de 20,00 por amigo. Ajude eles criando um programa o qual:
+
+a) Pergunte o valor da pizza
+
+b) Pergunte a quantidade de amigos reunidos
+
+c) Ao clicar em "Rola a pizza?", calcule e exiba o valor que cada amigo vai pagar na pizza com uma frase na página como esta "Cada amigo vai pagar R$X pela pizza"
+
+d) Somente caso o valor por amigo passe de R$20,00, exiba também a frase "Deu ruim! Pizza muito cara!"
+
+ 
+
+4a. Refaça a questão anterior de tal forma que a frase do item d) apareça na cor de letra azul e em itálico e negrito.
+
+ 
+
+5. Na cidade Paulopolis a luz custa R$ 0,85 por kWh. Criar um programa que:
+a) Solicite a quantidade de kWh consumida no mês
+b) Ao clicar em "calcular conta de luz", calcule o valor da conta no mês
+c) Dê um desconto de 10% somente se a quantidade for menor que 100 kWh
+d) Exiba um alerta com o valor da conta a ser paga
+
+ 
+
+6. Criar um programa que auxilie um banco a identificar quem tem renda o suficiente para fazer o financiamento da casa própria.
+
+a) Solicite o valor da renda familiar
+b) Solicite o valor da prestação
+c) Ao clicar em "Verificar financiamento", exiba na página a mensagem "a prestação corresponde a xx.x% da renda familiar" (divida a prestação pela renda e multiplique por 100)
+d) Se o valor calculado acima for maior que 30%, exibir também a mensagem abaixo em negrito e em vermelho.  
+
+"Será necessário complementar a renda familiar"  
+
+ 
+
+ 
+
+7. Criar um programa que auxilie o Banco Itado a identificar quem entrou no cheque especial.
+a) Solicite o saldo da conta
+b) Solicite o valor do débito (ou seja, valor a tirar da conta)
+c) Ao clicar em "Analisar conta", calcule o novo saldo da conta e exiba a mensagem "o saldo atual da conta corrente é xx.xx". Esta frase deverá estar em negrito e em vermelho somente se o saldo for menor que zero.
+
+ 
+
+ 
+
+8. Crie um programa que controle o peso médio dentro de um elevador:
+
+a) Solicite a quantidade de homens que entraram no elevador
+b) Solicite a quantidade de mulher que entraram no elevador
+c) Ao clicar em "Analisar peso", calcule o peso estimado sendo: homens x 80 somado com mulheres x 60
+d) Exiba na página a mensagem "Este elevador suporta 800 Kg e o peso estimado desta lotação é de xxxkg";
+e) Se o peso estimado for maior que 800, exibir também a mensagem "Será necessário descer alguém para que o elevador se movimente", na cor azul.
+
+ 
+
+9. . Refaça a questão anterior de tal forma que:
+
+a) Se o peso estimado for maior que 800...
+
+    a.1) Mas menor que 1000, a cor da frase fica a cor azul mesmo
+
+    a.2) Mas a partir de 1000 a cor da frase fica vermelha
+
+ 
+
+9. Estima-se que os usuários de conteúdo de Streaming gastem cerca de 100 milhões de horas por dia nesse tipo de entretenimento.
+Em média um episódio de seriado americano do estilo SITCOM (Friends, How I Met Your Mother, Dois Homens e Meio, etc.) tem 22min de duração.
+Sabendo disso, crie um programa o qual:
+a) Peça ao usuário para informar a última série (SITCOM) que ele assistiu.
+b) Peça ao usuário para informar o total de episódios que ele já assistiu da série.
+c) Tenha um botão "Verificar nível" que exiba abaixo dele a seguinte frase:
+ 
+"Vejo que você gosta da série X"
+ 
+E se o usuário já gastou mais de 30 horas na série informada, exiba também: "Uau, você realmente gosta dessa série!".
+ 
+Obs* Considere 22min como o tempo de duração de 1 episódio.
+
+ 
+
+ 
+
+10. Faça um programa o qual:
+
+ a) Pergunte ao usuário o valor de seu saldo na conta do banco
+
+ b) Ao clicar num botão "Verificar finanças"...
+
+b.1) Caso o saldo em conta for igual a zero (==0), exiba esta frase na cor preta na tela: "Conta zerada".
+
+b.2) Caso o saldo seja negativo (<0), exiba esta frase na cor vermelha na tela: "Está devendo!".  
+
+b.3) Caso o saldo seja positivo (>0), exiba esta frase na cor azul: "Saldo positivo! sorriso"
+
+ 
+
+ 
+
+11. Crie um programa o qual:
+
+a) Solicite a quantidade de filhos que o usuário tem
+
+b) Tenha um botão "Analisar família". Ao clicar nele...
+
+c) Caso tenha 1 ou mais filhos, exiba na tela, abaixo do botão, a frase
+
+Não tem TV
+
+d) Caso tenha 2 ou mais filhos, exiba na tela, abaixo da frase em c), a frase
+
+Não tem internet
+
+e) Caso tenha 3 ou mais filhos, exiba na tela, abaixo da frase em d), a frase
+
+Não tem video game
+
+f) Caso tenha 4 ou mais filhos, exiba na tela, abaixo da frase em e), a frase
+
+Não tem Netflix
+
+OBS: Ou seja, caso o usuário informe que tenha, por exemplo 4 ou mais filhos, devem aparecer as seguintes frases:
+
+   Não tem TV
+
+   Não tem internet
+
+   Não tem video game
+
+   Não tem Netflix
+
+Se tiver até 3 filhos, só não aparece a última frase, do Netflix
+
+ 
+
+ 
+
+12. Crie um programa o qual:
+
+a) Solicite o peso total num elevador
+
+b) Ao clicar num botão "Ligar elevador"...
+
+c) Caso o peso seja menor que 500, exiba um alert com a frase "Elevador vai se mover"
+
+d) Caso o peso seja a partir de 500, exiba um alert com "Alguém precisa descer do elevador"
+
+ 
+
+ 
+
+13. Crie um programa o qual:
+
+a) Solicite 2 notas de um aluno
+
+b) Ao clicar em "Verificar situação", calcule sua média e...
+
+c) Caso a média seja a partir de 6, exiba um alert com "Parabéns, aprovado!"
+
+d) Caso a média seja menor que 6, exiba um alert com "Tente outra vez..."

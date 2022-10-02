@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="exercicio4a.CSS">
+    <title>Rachar a conta</title>
+</head>
+<body>
+    Valor da pizza: <input type="text" id="in_Valor"><br>
+    Quantidade de amigos: <input type="text" id="in_qtdAmigos"> <br>
+    <button onclick="Pizza()"> Rola a pizza?</button><br>
+    <div id="div_valor" class="estilo"></div>
+
+</body>
+</html>
+<script>
+    function Pizza(){
+    
+        var Comer = Number (in_Valor.value) / (in_qtdAmigos.value)
+        div_valor.innerHTML= `Cada amigo vai pagar R$${Comer} pela pizza. <br>`        
+        
+        if (Comer > 20 ) {
+            div_valor.innerHTML += `Deu ruim! Pizza muito cara!`
+
+        }
+
+    } 
+
+</script>

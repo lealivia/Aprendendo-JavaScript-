@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3>Visualizar se a compra pode ser parcelada</h3> 
+
+    Selecione a forma de pagamento: <select id="sel_pagamento">
+        <option value="1">--Selecione--</option>
+        <option value="2">Dinheiro</option>
+        <option value="3">Cartão de débito</option>
+        <option value="4">Cartão de crédito</option>
+        <option value="5">Boleto</option>
+    </select> <br><br>
+
+    <button onclick="analisar()">Analisar compra</button> <br><br>
+
+    <div id="div_exibir"></div>
+</body>
+</html>
+
+<script>
+    function analisar(){
+        var pagamento = sel_pagamento.value
+
+        if(pagamento == 2|| pagamento == 3){
+            div_exibir.innerHTML=`Você terá que pagar a vista `
+        }else {
+            div_exibir.innerHTML=`Pagamento poderá ser parcelado`
+        }
+    }
+</script>

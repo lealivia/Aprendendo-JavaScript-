@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Idade</title>
+</head>
+<body>
+    Informe sua idade: <input type="number" id="in_idade" onkeyup="analisar()"> <br>
+    <div id="div_idade"></div>
+</body>
+</html>
+
+<script>
+
+    function analisar(){
+        var idade = Number(in_idade.value)
+        var infancia = idade > 0 && idade <= 12
+        var adolescência = idade > 12 && idade <= 18
+        var idoso = idade >= 65
+        var totalP = 0
+        
+        if(idade=``){ 
+        div_idade.innerHTML=``
+        }
+
+        div_idade.innerHTML = `
+        Já passou pela infância: ${infancia} <br>
+        Já passou pela adolescência: ${adolescência} <br>
+        Já é idoso(a): ${idoso} <br>
+        `
+        if(adolescência){
+           div_idade.innerHTML+= `Total de pontos: ` + ( totalP + 30)
+        }else if(idoso){
+            div_idade.innerHTML+= `Total de pontos: ` + (totalP + 80)
+        }         
+
+       
+    
+        
+    }
+</script>
+

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokemon</title>
+</head>
+<body>
+    <h2>Iniciante</h2>
+
+        <select name="" id="sel_iniciante">
+        <option value="">--selecione seu pokemon--</option>
+        <option value="1">Planta</option>
+        <option value="2">Água</option>
+        <option value="3">Fogo</option>
+    </select> <br><br>
+
+    <h2>Oponente</h2>
+
+    <select name="" id="sel_oponente">
+        <option value="">--selecione seu pokemon--</option>
+        <option value="1">Planta</option>
+        <option value="2">Água</option>
+        <option value="3">Fogo</option>
+    </select> <br><br>
+    
+    <button onclick="batalha()">Batalhar!</button> <br><br>
+    <div id="div_exibir"></div>
+    <div id="div_exibir1"></div>
+    
+</body>
+</html>
+
+<script>
+    function batalha(){
+        var iniciante = sel_iniciante.value
+        var oponente = sel_oponente.value
+        var empate = iniciante == 1 && oponente == 1 || iniciante == 2 && oponente == 2 || iniciante == 3 && oponente == 3
+        var ganhou1 = iniciante == 1 && oponente == 2
+        var ganhou2 = iniciante == 2 && oponente == 3
+        var ganhou3 = iniciante == 3 && oponente == 1 
+        var vitoria = 0                     
+        var derrota = 0
+        var empates = 0
+        
+            if(empate){
+            div_exibir.innerHTML=`<br> A batalha empatou! <br>` 
+            empates++
+            }else if(ganhou1 || ganhou2 || ganhou3){
+                vitoria++ 
+                div_exibir.innerHTML= `<br> O iniciante ganhou <br>` 
+            }else if(!ganhou1 || !ganhou2|| !ganhou3) {
+                div_exibir.innerHTML = `<br> O iniciante perdeu <br>`
+                derrota++ 
+            }
+            
+            div_exibir.innerHTML+=`Combate: Vitória ${vitoria} x Derrota ${derrota} x Empates ${empates}`
+            
+            }
+</script>

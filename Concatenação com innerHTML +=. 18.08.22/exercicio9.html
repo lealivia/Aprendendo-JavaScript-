@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Média aritmética </title>
+</head>
+<body>
+    <h2>Média aritmética</h2>
+    insira numéro 1: <input type=" " id="in_n1"> <br> <br>
+    insira numéro 2: <input type=" " id="in_n2"> <br><br>
+    <button onclick="Soma()"> Soma </button> <br> 
+    <div id="div_soma"></div> <br>
+    <button onclick="Diferença()"> Diferença</button> <br>
+    <div id="div_diferenca"></div> <br>
+    <button onclick="Produto()"> Produto</button> <br>
+    <div id="div_produto"></div> <br>
+    <button onclick="Razao()"> Razão </button> <br>
+    <div id="div_razao"></div> <br>
+
+
+</body>
+
+</html>
+
+<script>
+    function Soma(){
+   div_soma.innerHTML= (`a soma entre ${Number (in_n1.value)} e ${Number (in_n2.value)} é ${Number(in_n1.value) + Number (in_n2.value)}`)
+ 
+ }
+
+ function Diferença() {
+
+  div_diferenca.innerHTML= (`A diferença entre ${Number (in_n1.value)} e ${Number (in_n2.value)} é ${Number(in_n1.value) - Number (in_n2.value)} `)
+
+ }
+
+ function Produto() {
+    div_produto.innerHTML= (`O produto entre ${Number (in_n1.value)} e ${Number (in_n2.value)} é ${Number(in_n1.value) * Number (in_n2.value)}`)
+
+ }
+
+ function Razao() {
+    div_razao.innerHTML= (`A razão entre ${Number (in_n1.value)} e ${Number (in_n2.value)} é ${Number(in_n1.value) / Number (in_n2.value)} `)
+ }
+</script>

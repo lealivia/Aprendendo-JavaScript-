@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Times</title>
+</head>
+<body>
+    <select name="" id="sel_time">
+        <option value="">--Selecione um time--</option>
+        <option value="1">São Paulo</option>
+        <option value="2">Corinthians</option>
+        <option value="3">Palmeiras</option>
+        <option value="4">Santos</option>
+    </select>
+ <button onclick="Frase()">Fale sobre esse time </button> <br><br>
+ <div id="div_exibir"></div>
+</body>
+</html>
+
+<script>
+    function Frase(){
+        var time = sel_time.value
+
+        if (time == ""){
+            div_exibir.innerHTML= " "
+        }else if (time == 1){
+            div_exibir.innerHTML= '<div style= "background-color:black; color: red"> Salve o Tricolor paulista </div>' 
+        }else if (time == 2){
+            div_exibir.innerHTML= '<div style= "background-color: black; color: white"> Salve o Corinthians </div>'
+        }else if (time == 3){
+            div_exibir.innerHTML= '<div style= "background-color: green; color: white"> Salve o alviverde imponente </div>'
+        }else {
+            div_exibir.innerHTML= '<div style= "background-color: white; color: black"> Agora quem dá a bola é o Santos </div>'
+        }
+
+
+    }
+</script>

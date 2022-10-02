@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Meio Ambiente </title>
+</head>
+<body>
+   Quantos minutos a torneira 1 ficou pingando: <input id="in_t1"> <br>
+   Quantos minutos a torneira 2 ficou pingando: <input id="in_t2"> <br>
+   Quantos minutos a torneira 3 ficou pingando: <input id="in_t3"><br> <br>
+    <button onclick="calcule()"> Calcular </button>
+</body>
+</html>
+
+<script>
+    function calcule(){
+    
+    alert (` Suas 3 torneiras, juntas, desperdiçaram ${(Number (in_t1.value) * 15) + (Number (in_t2.value)* 15) + (Number (in_t3.value) * 15) } litros de àgua `)
+    
+   }
+</script>

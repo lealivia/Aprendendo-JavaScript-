@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Juliana Morosa</title>
+</head>
+<body>
+    <div id="div_exibir"> Você já clicou </div><br><br>
+    <button  onclick="cliques()">Clique cabalístico </button>
+
+</body>
+</html>
+<script>
+    var clique = 0
+    
+    function cliques(){
+
+        clique++;
+        
+    div_exibir.innerHTML=`Você já clicou ${clique}`
+
+    if (clique == 3 || clique == 4 || clique == 7 || clique == 10){
+        alert(`Você clicou ${clique} vezes e Juliana gosta desse número!`)
+    }
+    }
+
+</script>

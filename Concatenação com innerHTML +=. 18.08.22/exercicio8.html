@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SPTECH</title>
+</head>
+<body>
+    insira sua nota continuada: <input id="in_continuada"> <br><br>
+    insira sua nota semestral:<input id="in_semestral"> <br><br>
+    nome do aluno: <input id="in_nome"><br><br>
+    <button onclick="Media()"> Calcular Média </button> <br>
+    <div id="div_exibir"></div>
+</body>
+</html>
+
+<script>
+  function Media (){
+  div_exibir.innerHTML= (`A média do aluno ${in_nome.value} será ${(Number(in_continuada.value)* 0.4) + (Number(in_semestral.value)*0.6)}`)
+
+  }
+
+</script>

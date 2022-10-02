@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Poder Sayajin </title>
+</head>
+<body>
+    Nome do guerreiro: <input id="in_NomeG"> <br> <br>
+    Ki normal do guerreiro: <input id="in_ki"> <br><br>
+    <button onclick="Ver ()"> Ver ki em cada forma </button> <br><br>
+    <div id="div_exibir"> </div>
+</body>
+</html>
+<script>
+    function Ver(){
+        alert(`${(in_NomeG.value)} Super Sayajin KI ${Number (in_ki.value) * Number (50)} `)
+        alert (`${(in_NomeG.value)} Super Sayajin 2 KI ${Number (in_ki.value) * Number (100)}  `)
+    }
+</script>

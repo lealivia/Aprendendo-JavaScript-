@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temperatura </title>
+</head>
+<body>
+    Temperatura do ambiente: <input type="text" id="in_temp">
+    <button onclick="verificar()"> Verificar Clima </button>
+    <div id="div_imagem"></div>
+
+</body>
+</html>
+<script>
+    function verificar(){
+        var temperatura= Number (in_temp.value)
+
+        if (temperatura <10){
+            div_imagem.innerHTML=`<br> <img src= https://diariodoestadogo.com.br/wp-content/uploads/2021/06/tipos-de-frutas-1.jpg  alt="" width="200px">`
+        }else{
+            div_imagem.innerHTML=`<br> <img src= https://www.clickgratis.com.br/blog-clickgratis/wp-content/uploads/2016/03/allimentos-estragados.jpg alt="" width="200px">`
+        }
+
+    }
+</script>

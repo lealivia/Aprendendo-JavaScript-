@@ -1,0 +1,26 @@
+1. Crie um programa em HTML/JS que:
+a) Solicite o nome da linha de ônibus que o usuário pega
+b) Solicte o tempo de viagem até o trabalho
+c) Ao clicar num botão "Registar viagem", o programa exibe 4 alertas:
+ 1o - "Registrando sua linha de ônibus"
+ 2o - o nome da linha digitada no programa
+ 3o - "Registrando o tempo da viagem"
+ 4o - o tempo de viagem digitado no programa
+
+
+
+2. Crie um programa em HTML/JS que:
+a) Solicite o nome do filme favorito do usuário
+b) Pergunte quantas vezes ele o assistiu
+c) Pergunte qual a última vez que ele assistiu
+d) Ao clicar no botão "Analisar Filme", deve aparecer somente 1 alerta com a frase
+"Você já assistiu FILME pela última vez em X, e já o assitiu Y vezes"
+
+
+
+3. Crie um programa em HTML/JS que:
+a) Solicite o sabor da pizza que a turma vai pedir
+b) Solicite o preço da pizza
+c) Solicite o prazo de entrega da pizza, em minutos
+d) Ao clicar em "Pedir pizza!", deve aparecer na própria página, abaixo do botão, a frase....
+  A pizza de SABOR, que custou R$X chegará em Y minutos

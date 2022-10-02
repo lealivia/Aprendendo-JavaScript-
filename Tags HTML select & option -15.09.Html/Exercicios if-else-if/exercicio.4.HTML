@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Avaliar Peso</title>
+</head>
+<body>
+    Insira o peso da criança: <input type="number" id="in_peso" onkeyup="analise()"> <br><br>
+    <div id="div_resultado"></div>
+
+</body>
+</html>
+<script>
+    function analise(){
+        var peso = Number (in_peso.value)
+        
+        if (peso <= 13.5){
+            div_resultado.innerHTML= "Abaixo do peso"
+        }else if (peso == 18.3){
+            div_resultado.innerHTML= "Peso perfeito"
+        }else if(peso <= 21.2){
+            div_resultado.innerHTML="Peso na média"
+        }else {
+            div_resultado.innerHTML= "Acima do peso"
+        }
+
+    }
+</script>

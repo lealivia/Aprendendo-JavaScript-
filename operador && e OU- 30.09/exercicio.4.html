@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    Insira sua nota: <input type="number" id="in_nota"> <br><br>
+    Insira sua frequência: <input type="number" id="in_freq"> <br> <br>
+    <button onclick="analisar()">Analisar aluno</button> <br><br>
+    <div id="div_exibir"></div>
+</body>
+</html>
+
+<script>
+    function analisar(){
+        div_exibir.innerHTML=``
+        var nota = Number (in_nota.value)
+        var frequencia = Number (in_freq.value)
+        var Nvalida = nota >= 0 && nota <= 10
+        var Fvalida= frequencia >= 0 && frequencia <= 100 
+
+        if (!Nvalida){
+            alert(`Onde já se viu nota menor que 0 e maior que 10?!`)
+            div_exibir.innerHTML= ``
+        } else if (nota >=0 && nota <6){
+            div_exibir.innerHTML=` Aluna ficou abaixo da média <br>`
+        }else if (nota >=6 && nota <= 8){
+            div_exibir.innerHTML+= ` Aluna ficou na média <br>`
+        }else{
+            div_exibir.innerHTML+=` Aluno acima da média <br>`
+        }
+
+        if (!Fvalida){
+            alert(`Onde já se viu frequência menor que 0 ou maior que 100?!`)
+            div_exibir.innerHTML= ``
+        }else if(frequencia >= 75){
+            div_exibir.innerHTML+=` Aluno aprovado por frequência!`
+        }else{
+            div_exibir.innerHTML+=` Aluno reprovado por frequência!`
+        }
+
+        
+        if(nota == `` && frequencia == ``){
+            div_exibir.innerHTML= ``
+        }
+
+        
+
+
+    }
+</script>

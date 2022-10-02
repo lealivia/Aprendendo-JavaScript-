@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login</title>
+</head>
+<body>
+    Digite seu login: <input placeholder="Nome usuário ou email" id="in_login"> <br>
+    Digite sua senha: <input type="password" id="in_senha"> <br>
+    <button onclick="entrar()"> Entrar </button> <br>
+    <div id="div_exiba"></div>
+</body>
+</html>
+
+<script>
+    function entrar(){
+        div_exiba.innerHTML= ``
+        var login = in_login.value
+        var senha = in_senha.value
+        var login = login == "aidimin"
+        var senha = senha == "seinha"
+
+
+        if( login && senha){
+            div_exiba.innerHTML=`<div style="color:blue"> Usuário autenticado com sucesso!`
+        } else if(!login){
+            div_exiba.innerHTML+= `<div style="color: red"> Seu login está inválido!`
+        } 
+        
+        if(!senha){
+            div_exiba.innerHTML+=`<div style="color: red"> Sua senha está inválida!`
+        }else{
+            div_exiba.innerHTML+= ``
+        }
+    }
+</script>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Estações </title>
+</head>
+<body>
+    <select name="" id="sel_estacoes" onchange="estacoes()">
+        <option value="">--Selecione--</option>
+        <option value="1">Janeiro</option>
+        <option value="1">Fevereiro</option>
+        <option value="2">Março</option>
+        <option value="2">Abril</option>
+        <option value="2">Maio</option>
+        <option value="3">Junho</option>
+        <option value="3">Julho</option>
+        <option value="3">Agosto</option>
+        <option value="4">Setembro</option>
+        <option value="4">Outubro</option>
+        <option value="4">Novembro</option>
+        <option value="1">Dezembro</option>
+    </select> <br><br>
+    <div id="div_exibir"></div> <br><br>
+    <img src="" id="img_estacao" height="200px">
+
+</body>
+</html>
+<script>
+    function estacoes(){
+        var estacoes = sel_estacoes.value
+
+        if(estacoes == ''){
+            div_exibir.innerHTML=' '
+        }else if (estacoes == 1){
+            div_exibir.innerHTML=`Verão`
+            img_estacao.src= "https://jeonline.com.br/site/uploads/posts/6596_22122015154333.jpg"
+        }else if(estacoes == 2){
+            div_exibir.innerHTML = 'Outono'
+            img_estacao.src= "https://static.mundoeducacao.uol.com.br/mundoeducacao/2020/11/folhas.jpg"
+        }else if (estacoes == 3){
+            div_exibir.innerHTML= 'Inverno'
+            img_estacao.src= "https://t5z6q4c2.rocketcdn.me/wp-content/uploads/2020/04/inverno-datas-e-caracteristicas.jpg"
+        }else {
+            div_exibir.innerHTML= 'Primavera'
+            img_estacao.src="https://salerno.occhionotizie.it/wp-content/uploads/sites/2/2018/03/Primavera-1000x600.jpg"
+        }
+    }
+    
+</script>

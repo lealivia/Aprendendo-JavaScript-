@@ -1,0 +1,112 @@
+1. Juliane Joada só come duas frutas: uva e abacaxi. De forma alguma ela come outra fruta. Crie um programa que vai analisar se ela vai comer ou não uma fruta da seguinte forma... 
+
+a) Pergunte o nome da fruta que chegou na mesa (considere que o usuário só vai digitar o nome de uma fruta) 
+
+b) Ao clicar em "Vai comer?", exiba um alert com "Sim, vai comer X" (onde X é a fruta informada), caso a fruta seja uma das que ela come 
+
+c) Caso contrário, exiba um alert com "A fruta X ela não come" (onde X é a fruta informada) 
+
+ 
+
+ 
+
+2. No processo seletivo da faculdade Mentes Brilhantes, o aluno é aprovado se sua nota no ENEM foi a partir de 800 ou se ele fizer o vestibular interno e tirar pelo menos 700. Crie um programa que será usado por essa instituição. 
+
+a) Solicite a nota do ENEM do aluno 
+
+b) Solicite a nota do vestibular interno do aluno 
+
+c) Ao clicar em "Avaliação", deve ser exibido um alert com o texto "Parabéns! Aprovado", caso suas notas, segundo as regras, o aprovem 
+
+d) Caso contrário, exiba um alert com a frase "Tente semestre que vem!" 
+
+ 
+
+ 
+
+3. Crie um programa o qual ajudará o governo a saber se ele dará a ajuda emergencial ao Covid19 a um cidadão: 
+a) Solicite o valor da renda individual do usuário 
+b) Solicite o valor da renda familiar do usuário 
+c) Ao clicar em "Terei o benefício", podem aparecer as seguintes mensagens: 
+
+   "Você terá direito ao auxílio", caso a renda individual for até 2000 ou caso a renda familiar for até 3000 
+
+   "Sem direito ao auxílio", caso contrário 
+
+ 
+
+ 
+
+4. Crie um programa que avalie a possibilidade de um pagamento da compra ser parcelado ou não. 
+
+a) Pergunte o modo de pagamento numa combo com as seguintes opções: 
+
+    Dinheiro 
+    Cartão de débito 
+    Cartão de crédito 
+    Boleto 
+
+b) Ao clicar num botão "Analisar compra", exiba uma dessa mensagens: 
+
+   "Você terá que pagar a vista", somente se o pagamento for dinheiro ou débito 
+   "Pagamento poderá ser parcelado", se o pagamento for crédito ou boleto 
+
+ 
+
+ 
+
+5. Considere que a temperatura confortável para o ser humano é entre 21 e 24 graus. Crie então um sistema de alerta que apenas avisa se a temperatura está desconfortável e qual a consequência desse desconforto. Nesse programa, se a temperatura estiver confortável, simplesmente nenhum aviso é emitido. Para tal, crie um programa que: 
+
+a) Pergunte a temperatura atual 
+
+b) Ao clicar em "Analisar clima", apenas se a temperatura não for confortável, exiba um alert com a frase "Alerta de desconforto!" e, depois, uma das frases a seguir, também em alerts: 
+
+  b.1) "As pessoas vão ter hipotermia", caso a temperatura seja menor que o limite inferior da zona de conforto 
+
+  b.2) "As pessoas vão derreter", caso a temperatura seja maior que o limite superior da zona de conforto 
+
+c) Lembrando que, em caso de temperatura confortável, simplesmente nada acontece 
+
+ 
+
+ 
+
+6. Juliana Morosa gosta muito de números chamados "cabalísticos". Principalmente do 3, 4, 7 e 10. Ela quer saber quando chega em um determinado número de cliques que seja um deles. Assim, crie um programa o qual: 
+
+a) Tenha um texto "Você já clicou 0 vezes" no topo 
+
+b) Ao clicar num botão "Clique cabalístico", o contador do texto em a) aumenta em 1 (ou seja, de 0 vai pra 1, de 1 vai pra 2, de 2 vai pra 3 e assim por diante) 
+
+c) Caso o contador seja um dos quatro números que Juliana gosta, exiba um alert com a frase "Você clicou X vezes e Juliana gosta desse número!", onde X é a quantidade atual de cliques no botão 
+
+ 
+
+ 
+
+7. Crie um programa o qual: 
+
+a) Tenha o seguinte texto no topo: 
+
+    "Calculadora de cansaço do aluno SPTech". 
+
+b) Tenha o texto "Meio de transporte" e uma combo para o usuário escolher o meio de transporte dele, podendo ser: 
+
+    Ônibus 
+
+    Metrô 
+
+    Carro 
+
+    Bicicleta 
+
+    Lotação 
+
+c) Tenha o botão "Calcular cansaço" que ao clicar mostrar em um alerta o nível de cansaço do usuário. 
+
+d) Se o meio de transporte escolhido for "Carro" OU "Bicicleta", exiba em um alert: "Tá tranquilo ..." 
+
+e) Se o meio de transporte escolhido for "Metrô", exiba em um alert: "Um pouco cansado". 
+
+f) Se o meio de transporte escolhido for "Ônibus" OU "Lotação", exiba em um alert: "Vish ... vive cansado." 
+
+

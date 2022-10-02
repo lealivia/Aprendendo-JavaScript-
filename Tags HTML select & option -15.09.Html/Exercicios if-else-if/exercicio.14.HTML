@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lutador</title>
+</head>
+<body>
+    <div id="div_exibir">Vida do Lutador: 1000</div> <br>
+    <button onclick="apanhar()"> Apanhar </button><br><br>
+    <button onclick="concentrar()">Concentrar força</button><br><br>
+    <img src="" id="img_lutador" width="200px">
+
+</body>
+</html>
+
+<script>
+    clique = 1000
+    img_lutador.src="https://ichef.bbci.co.uk/news/640/cpsprodpb/15707/production/_95151878_gettyimages-622500032.jpg" 
+   
+
+    function apanhar(){
+        clique = clique - 100
+        div_exibir.innerHTML= `Vida do Lutador: ${clique}`
+
+        if(clique <= 0 ){
+        div_exibir.innerHTML= `<h2> Lutador já era!<h2>`
+        img_lutador.src= "https://conteudo.imguol.com.br/c/esporte/4f/2021/01/24/mcgregor-no-chao-do-octogono-apos-ser-nocauteado-por-dustin-poirier-no-ufc-257-1611468558436_v2_4x3.jpg"
+    }else {
+        div_exibir.innerHTML= `Vida do Lutador: ${clique} <br>` + `Lutador ainda vivo`
+    }
+    }   
+
+    function concentrar(){
+        clique += clique * 0.5
+
+        if(clique > 0) {
+        div_exibir.innerHTML=`Vida do Lutador: ${clique}<br>`+ `Lutador ainda vivo`}
+
+    }
+
+</script>

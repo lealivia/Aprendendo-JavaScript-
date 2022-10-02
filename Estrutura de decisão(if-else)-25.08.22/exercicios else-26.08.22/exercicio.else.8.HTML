@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="exercicio8.CSS">
+    <title>Peso médio</title>
+</head>
+<body>
+    Quantidade de homens no elevador: <input type="text" id="in_qtdh"><br> <br>
+    quantidade de mulheres no elevador: <input type="text" id="in_qtdm"><br> <br>
+    <button onclick="ligar()"> Ligar elevador </button>
+    <div id="div_exibir" class="frase"></div>
+    <div id="div_descer" class="estilo"></div>
+</body>
+</html>
+<script>
+    function ligar (){
+        div_descer.innerHTML=''
+
+        var homens= Number (in_qtdh.value)
+        var mulheres= Number (in_qtdm.value)
+        var total= (homens * 90) + (mulheres * 70)
+
+        div_descer.innerHTML=``
+
+        if (total <500){
+            div_descer.innerHTML= `<br> Elevado vai se mover, pois está com ${total}kg`
+            } else{
+             div_exibir.innerHTML= `<br> Alguém precisa descer. Precisa perder ${total}kg para mover o elevador `
+            }
+       
+    }
+</script>

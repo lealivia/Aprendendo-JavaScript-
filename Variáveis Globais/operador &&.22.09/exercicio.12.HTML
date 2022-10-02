@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cartão fidelidade</title>
+</head>
+<body>
+    Quantidade de passagens que deseja adquirir: <input id="in_qtd"><br><br>
+    <button onclick="comprar()">Comprar </button> <br><br>
+    <div id="div_valor"></div>
+</body>
+</html>
+<script>
+    function comprar(){
+        var passagens= Number (in_qtd.value)
+        var desconto1 = (passagens * 4.4) - (4.4 * 0.03)
+        var desconto2 = (passagens * 4.4) - (4.4 * 0.05)
+        var desconto3 = (passagens * 4.4 ) - (4.4 * 0.07)
+        
+        
+            if (passagens >= 8 && passagens <=19) {
+                div_valor.innerHTML= `Total a pagar R$:${(desconto1).toFixed(2)}`
+            }else if (passagens >= 20 && passagens <= 49){
+                 div_valor.innerHTML=`Total a pagar R$:${(desconto2).toFixed(2)}`
+            }else if (passagens == 50){
+                 div_valor.innerHTML=`Total a pagar R$:${(desconto3).toFixed(2) }`
+            }else {
+            alert (`Quantidade inválida para o Fidelidade!`)
+        }
+    }
+</script>

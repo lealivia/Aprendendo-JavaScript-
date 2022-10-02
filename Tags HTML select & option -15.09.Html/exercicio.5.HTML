@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabuada</title>
+</head>
+<body>
+    <select  id="sel_tabuada" onchange="tabuada()">
+        <option value="">-- Escolha um número --</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+        <option value="6">6</option>
+        <option value="7">7</option>
+        <option value="8">8</option>
+        <option value="9">9</option>
+    </select>
+<div id="div_calculo"></div>
+
+
+</body>
+</html>
+<script>
+    function tabuada(){
+        var tabuada = sel_tabuada.value
+
+        div_calculo.innerHTML=`   
+        ${tabuada}x 1 = ${tabuada*1} <br>
+        ${tabuada}x 2 = ${tabuada*2} <br>
+        ${tabuada}x 3 = ${tabuada*3} <br>
+        ${tabuada}x 4 = ${tabuada*4} <br>
+        ${tabuada}x 5 = ${tabuada*5} <br>
+        ${tabuada}x 6 = ${tabuada*6} <br>
+        ${tabuada}x 7 = ${tabuada*7} <br>  
+        ${tabuada}x 8 = ${tabuada*8} <br>
+        ${tabuada}x 9 = ${tabuada*9} `
+
+    
+    
+    }
+
+
+</script>

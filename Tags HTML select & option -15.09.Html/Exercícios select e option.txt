@@ -1,0 +1,85 @@
+1. No anime "One Punch Man", os heróis são classificados em classes C, B, A ou S (a mais top). Crie um programa o qual:
+
+a) O usuário indica qual herói quer saber a classe, escolhendo dentre as opções:
+ Metal Night
+ Máscara Doce
+ Prisioneiro Puri Puri
+ Fubuki
+ Cavaleiro sem licença
+
+b) Ao selecionar um deles, o programa exibe na própria página um texto como esse:
+ Esse(a) herói(na) é da classe X
+Onde X é a classe do heroi escolhido (pesquise na internet)
+
+
+
+2. Crie um simulador de idade de tempo para aposentadoria:
+
+a) O usuário digita quantos anos já trabalhou
+
+b) O usuário informa numa lista se trabalhou mais como:
+  Funcionário de empresa privada
+  Funcionário de empresa pública
+  Empreendedor
+
+c) Ao clicar no botão "Calcular aposentadoria", o programa exibe na página uma frase como esta:
+   Você ainda terá que trabalhar por mais X anos para se aposentar.
+Onde X é calculado conforme essa regra:
+  Um funcionário de empresa privada precisa trabalhar por 40 anos para aposentar
+  Um funcionário de empresa pública precisa trabalhar por 35 anos para aposentar
+  Um empreendedor precisa trabalhar por 45 anos para aposentar
+
+
+
+3. Crie um programa o qual:
+
+a) Tenha uma "combo" com nomes de 4 produtos de mercearia (ex: leite, farinha etc)
+
+b) Ao clicar num botão "ver preço" deve aparecer um alert com a frase "Isso custa R$X,XX" (você decide o valor de cada produto com 2 casas decimais).
+
+
+4. Existe uma oração muito famosa atribuída a São Francisco de Assis, chamada "Oração pela paz". É aquela que diz "onde houver ódio que eu leve amor, onde houver desespero que eu leve esperança...". Ou seja, tem um sentimento ruim e o bom em seguida.
+
+
+
+Crie um programa o qual: 
+
+a) Tenha tenha uma combo box onde o usuário veja pelo menos 4 dos trechos que começam com "onde houver..." da oração. Mas deve haver só até a palavra negativa (ex: "Onde houver ódio"). 
+
+b) Ao escolher uma opção, exiba um alerta com a parte "boa" correspondente, conforme a oração 
+
+
+5. Faça um programa que ensine a tabuada, tenha uma lista suspensa com as opções de 2 a 9 e ao selecionar uma das opções mostre na página a tabuada do número selecionado.  
+Ex: se escolher 4:
+4 x 2 = 8
+4 x 3 = 12
+4 x 4 = 16
+...
+4 x 9 = 36
+
+#ficaadica use o atributo onchange
+
+ 
+
+6. (Desafio) Selecione na internet quatro imagens, uma para cada estação do ano (primavera, verão outono e inverno). Faça um programa que tenha uma COMBO BOX com as opções das estações do ano, sendo que ao selecionar uma estação deve aparecer na tela a imagem da opção selecionada com 200px de largura
+
+#ficaadica você pode na tag script mudar o src de uma imagem. 
+
+
+
+7. Crie um programa o qual:
+
+a) Tenha uma "combo" com os nomes dos 4 grandes times de São Paulo
+b) Ao clicar num botão "Ver escudo", abaixo da combo deve aparecer o escudo (ou uma zueira) do time selecionado 
+
+
+8. Crie um programa que ajude o usuário a conhecer cada um dos descontos que um empregado de carteira assinada tem.
+a) A tela deve ter um campo "Digite seu salário"
+b) A tela deve ter um "combo" com as opções:
+   INSS
+   IR
+   VT
+c) Ao clicar num botão "Ver Desconto", deve aparecer na tela uma frase como esta:
+   Valor desse desconto: R$X,XX
+#ficaadica1 - Exiba os centavos sempre com 2 casa decimais.
+#ficaadica2 - Para calcular os descontos, considere que INSS é 10% do salário, IR é 20% do salário e VT é 5% do salário. Por exemplo, se digitarmos 1000 no salário e escolhermos a opção VT, ao clicar no botão deve aparecer que o desconto é de 50.

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Economia</title>
+</head>
+<body>
+    <div id="div_exibir"> Valor guardado: R$0.00</div><br>
+    <div id="div_exibir1"></div><br><br>
+    <button onclick="guardar()">Guardar R$:5,00</button><br><br>
+    <button onclick="gastar()">Gastar R$:10,00</button><br><br>
+    
+</body>
+</html>
+<script>
+     clique = 0
+
+    function guardar(){
+        clique = clique +5
+
+        if(clique >= 0){
+            div_exibir.innerHTML=`>Valor guardado R$: ${clique}<br`+ `<div style ="color:blue"> Finanças OK! </div>`
+        } if (clique >= 100){
+            div_exibir1.innerHTML=`#Ostentação `
+        }
+    }
+
+    function gastar (){
+        clique = clique -10
+
+        if(clique < 0){
+            div_exibir.innerHTML= `Valor guardado R$: ${clique}<br>`+ `<br> <div style = "color:red"> Finanças em PERIGO! </div>`
+        } if (clique < -20){
+            div_exibir1.innerHTML=`Seu nome vai ficar sujo, hein?`
+        }
+    }
+</script>

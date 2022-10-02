@@ -1,0 +1,41 @@
+Exercícios - toFixed()
+1. Crie um programa em HTML/JS que:
+a) Solicite o sabor de uma pizza
+b) Solicite o preço da pizza
+c) Solicite a quantidade de amigos que vai rachar a conta
+d) Ao clicar em "Pedir Pizza", exiba abaixo do botão um texto como este: "A pizza de X custa R$Y e cada amigo vai pagar R$Z"
+e) Exiba os valores sempre com 2 casas decimais
+
+2. Crie um programa em HTML/JS que:
+a) Solicite 2 notas do aluno
+b) Ao clicar em "Ver média", exiba abaixo dele a frase "Sua média foi de X", onde X é a média aritmética entre as 2 notas
+c) Exiba os valores sempre com 2 casas decimais
+
+
+3. Crie um programa que:
+a) Solicite 2 números ao usuário
+b) tenha um botão para cada operação aritmética. Ao clicar em algum deles, exibir ABAIXO do botão UMA dessas frases:
+
+   A soma entre X e Y é Z
+   A diferença entre X e Y é Z
+   O produto entre X e Y é Z
+   A razão entre X e Y é Z         
+
+OBS: exiba os valores sempre com 2 casas decimais
+
+
+4. Crie um programa que:
+a) Solicite ao usuário seu peso e altura
+b) Ao clicar no botão "IMC Homem", calcule e exiba seu IMC considerando que é um homem
+c) Ao clicar no botão "IMC Mulher", calcule e exiba seu IMC considerando que é uma mulher
+Use a fórmula de IMC em https://centrodeobesidadeediabetes.org.br/tudo-sobre-obesidade/calculadora-de-imc/. E considere que o IMC da mulher é sempre 10% menor que o do homem.
+d) Exiba os valores sempre com 2 casas decimais
+
+
+5. Antônia Legre vai começar em seu primeiro emprego com carteira assinada após ser efetivada num estágio numa empresa de TI parceira da SPTech. Enfim ela descobriu que quando um funcionário tem um salário de R$3.000,00, na verdade não cai esse valor em sua conta, pois pela CLT temos vários descontos. Crie um programa que:
+a) Solicite o valor do salário bruto do usuário
+b) Calcule o valor do desconto de INSS (previdência), que é 10% do valor do bruto
+c) Calcule o valor do desconto de IR (imposto de renda), que é 20% do valor do bruto
+d) Calcule o valor do imposto sindical, que é 1/30 do bruto
+e) Exiba um alerta com uma frase como esta: "Apesar de seu bruto ser R$X, após os descontos, você receberá somente R$Y"
+f) Exiba os valores sempre com 2 casas decimais

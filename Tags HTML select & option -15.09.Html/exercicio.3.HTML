@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mercearia</title>
+</head>
+<body>
+    <h2>Selecine os produtos</h2>
+
+    <select id="sel_produto"> 
+        <option value="6.00">Leite</option>
+        <option value="10.00">Farinha</option>
+        <option value="15.00">Ovos</option>   
+        <option value="7.00">Manteiga</option>
+    </select>
+    <button onclick="preco()">Ver preço</button>
+</body>
+</html>
+<script>
+    function preco(){
+        var produto = sel_produto.value
+
+        alert(`Isto custa R$${produto}`)
+    }
+
+</script>

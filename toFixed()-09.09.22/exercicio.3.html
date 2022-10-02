@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Média aritmética </title>
+</head>
+<body>
+    <h2>Média aritmética</h2>
+    insira numéro 1: <input type=" " id="in_n1"> <br> <br>
+    insira numéro 2: <input type=" " id="in_n2"> <br><br>
+    <button onclick="Soma()"> Soma </button> <br> 
+    <div id="div_soma"></div> <br>
+    <button onclick="Diferença()"> Diferença</button> <br>
+    <div id="div_diferenca"></div> <br>
+    <button onclick="Produto()"> Produto</button> <br>
+    <div id="div_produto"></div> <br>
+    <button onclick="Razao()"> Razão </button> <br>
+    <div id="div_razao"></div> <br>
+
+
+</body>
+
+</html>
+
+<script>
+        
+    function Soma(){
+
+        var N1= Number (in_n1.value)
+        var N2= Number (in_n2.value)
+
+        div_soma.innerHTML= (`a soma entre ${N1} e ${N2} é ${(N1 + N2).toFixed(2)}`)
+ 
+ }
+
+ function Diferença() {
+        
+        var N1= Number (in_n1.value)
+        var N2= Number (in_n2.value)
+        div_diferenca.innerHTML= (`A diferença entre ${N1} e ${N2} é ${(N1 - N2).toFixed(2)} `)
+
+ }
+
+ function Produto() {
+        var N1= Number (in_n1.value)
+        var N2= Number (in_n2.value)
+        div_produto.innerHTML= (`O produto entre ${N1} e ${N2} é ${(N1 * N2).toFixed(2)}`)
+
+ }
+
+ function Razao() {
+        var N1= Number (in_n1.value)
+        var N2= Number (in_n2.value)
+        div_razao.innerHTML= (`A razão entre ${N1} e ${N2} é ${(N1 / N2).toFixed(2)} `)
+ }
+</script>

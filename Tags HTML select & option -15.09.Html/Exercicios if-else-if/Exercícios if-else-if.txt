@@ -1,0 +1,211 @@
+1. Crie um programa no qual um profissional de educação física possa determinar de forma mais rápida quais esportes uma pessoa tem uma boa altura para praticar.
+
+a) Solicite sua altura
+
+b) Conforme vai digitando, deve aparecer abaixo uma dessas frases:
+
+   "Você pode ser piloto de corrida" (altura até 1.65)
+
+   "Você pode ser jogador de futebol" (altura +1.65 até 1.80)
+
+   "Você pode ser jogador de vôlei ou basquete" (altura + 1.80)
+
+ 
+
+  
+2. Crie um programa que exibe a classe social de uma pessoa que mora em Tuvalu (um dos menores países do mundo) conforme a renda familiar mensal.
+
+a) Solicite a renda familiar mensal
+
+b) Ao clicar no botão “Analisar Renda”, deve aparecer abaixo uma dessas frases:   
+
+   "Classe E" (até 250)
+
+   "Classe D" (+250 até 900)
+
+   "Classe C" (+900 até 2500)
+
+   "Classe B" (+2500 até 9500)
+
+   "Classe A" (+9500)
+
+ 
+
+  
+3. Para o ser humano, a temperatura é...
+
+    Congelante (até menos de 14ºC)
+
+    Com Frio (entre 14ºC e 21ºC)
+
+    Confortável (mais de 21ºC até 24ºC)
+
+    Com Calor (mais de 24ºC até 31ºC)
+
+    Calor escaldante (mais de 31ºC)
+
+Crie um programa que, ao ler uma temperatura, exiba uma dessas situações de temperatura.
+
+ 
+
+ 
+
+4. Uma nutróloga e quer um programa que a ajude a avaliar o peso de crianças de 5 anos. Crie para ela um programa que, ao ler o peso de uma criança de 5 anos, exibe uma dessas frases
+
+    Abaixo do peso (se peso até 13.5kg)
+
+    Acima do peso (se peso maior que 21.2kg)
+
+    Peso na média (se peso maior que 13.5kg até 21.2kg)
+
+    Peso perfeito (se o peso for exatamente 18.3kg)
+
+ 
+
+ 
+5. Crie um programa o qual:
+
+a) Solicite a nota do aluno
+
+b) Ao clicar em "Classificar aluno", exiba uma dessas mensagens num alert
+
+      "Aluno precisa de muita ajuda", caso a nota for menor que 5.
+      "Aluno na média", caso a nota for entre 5 até 7.
+      "Aluno na acima da média", caso a nota for maior que 7 até 9.5.
+      "Aluno fora da curva", caso a nota for maior que 9.5.
+
+ 
+
+ 
+6. Crie um programa o qual:
+a) Pergunte numa combo, qual time grande São Paulo o usuário torce. Use uma combo.
+b) Ao clicar em "Fale sobre esse time", exiba abaixo:
+   "Salve o Corinthians" com fundo preto e letra branca, se for Corinthians
+   "Salve o alviverde imponente" com fundo verde e letra branca, se for Palmeiras
+   "Agora que dá a bola é o Santos" com fundo branco e letra preta, se for Santos
+   "Salve o Tricolor paulista" com fundo preto e letra vermelha, se for São Paulo
+
+ 
+
+7. Crie um programa o qual:
+
+a) Solicite o valor que o usuário tem economizado
+
+b) Ao clicar em "Poder de compra", exibir uma ou várias frases abaixo do dele, conforme estas regras:
+
+   b.1) Caso o valor economizado seja igual ou menor que 0: Exibir SOMENTE a frase Nada de compras triste
+
+   b.2) Caso o valor economizado for maior que 0 e até 100: Exibir Viajem de ida e volta pra Praia Grande
+
+   b.3) Caso o valor economizado seja maior que 100 e menor que 4000: Exibir abaixo da frase de b.2): Uma boa moto usada
+
+   b.4) Caso o valor economizado é a partir de 4000: Exibir abaixo da frase de b.3): Mais alguma bobagem legal
+
+ 
+
+8. Uma nutricionista e precisa ajudar seus pacientes a não engordarem tanto na quarentena do Covid19. Ajude ela criando um programa o qual:
+
+a) Pergunte quantos pães franceses o usuário tem comido por dia
+
+b) Pergunte quantos pacotes de bolacha recheada o usuário tem comido por dia
+
+c) Pergunte quantos copos de achocolatado o usuário tem tomado por dia
+
+d) Ao clicar em "Verificar calorias", calcule quantas calorias o usuário tem consumido com base nas 3 informações. Considere que um pão francês tem 50 calorias, um pacote de bolacha, 80 e um copo de achocolatado, 70.
+
+e) Após fazer o cálculo, exiba uma dessas frases, abaixo do botão:
+
+   "Parabéns, vai sair em forma da quarentena!", caso as calorias sejam menores do que 200.
+
+   "Cuidado, vai ficar mais "fofinho(a)" após quarentena!", caso as calorias sejam entre 200 e 400.
+
+   "Bom, acho que muitos não vão te reconhecer após a quarentena", caso as calorias sejam mais de 400.
+
+ 
+
+9. Crie um programa o qual:
+
+a) Pergunte ao usuário qual sua meta de economia
+
+b) Pergunte ao usuário quanto tem guardado
+
+c) Ao clicar em "Analisar economia"...
+
+d) Caso a meta tenha sido alcançada ou ultrapassada, exibir, abaixo do botão, a frase Parabéns, meta alcançada!. Caso a meta tenha sido ultrapassada, exibir também a frase Meta ultrapassada em X (onde X é a diferença entre a economia e a meta)
+
+e) Caso a meta ainda não tenha sido alcançada, exibir, abaixo do botão, a frase Força! Ainda em busca da meta! Falta X (onde X é a diferença entre a meta e a economia)
+
+ 
+
+10. Faça um programa para auxiliar o banco SPTO na análise das contas de seus clientes
+
+ a) Pergunte ao usuário o nome e o saldo do cliente
+
+ b) Ao clicar num botão "Verificar Conta"...
+
+b.1) Se o saldo for negativo, exiba a frase “Com o saldo de 999.99 o cliente XXXXXXX está com saldo devedor”  
+
+b.2) Se o saldo estiver entre 0 e 2000, exiba a frase “Com o saldo de 999.99 o cliente XXXXXXX está com saldo NORMAL  
+
+b.3) Se o saldo estiver entre 2000,01 e 5000, exiba a frase “Com o saldo de 999.99 o cliente XXXXXXX está com saldo ACIMA DA MÉDIA”  
+
+b.4) Se o saldo estiver acima de 5000, exiba a frase “Com o saldo de 999.99 o cliente XXXXXXX TEM PERFIL DE INVESTIDOR”  
+
+ 
+
+ 
+11. Crie um programa o qual:
+
+a) Tenha uma combo (select) com todos os meses do ano (option)
+
+b) Após alterar o valor da combo, exiba abaixo dela o nome uma imagem da estação do ano mais provável
+
+c) Considere que o clima é no hemisfério sul, ou seja:
+     Outono: março, abril e maio.
+     Inverno: junho, julho e agosto.
+     Primavera: setembro, outubro e novembro.
+     Verão: dezembro, janeiro e fevereiro.
+
+
+12. Crie um botão para avaliar o quão habilidoso o usuário é nos cliques.
+
+a) A tela deve ter o texto "Você já clicou 0 vezes"
+
+b) Ao clicar em "Clica neu", o contador do texto em a) aumenta. De 0 vai pra 1, depois pra 2, depois pra 3 e assim por diante
+
+c) Além de atualizar o contador, exiba umas dessas frases abaixo da frase em a)
+
+     "Dedo fraquinho, hein", se clicou menos de 5 vezes
+
+     "Dedo bom, mano" se clicou entre 5 e 10 vezes
+
+     "Gosta de clicar, hein!", se clicou entre 11 e 15 vezes
+
+     "Eita dedo nervoso!", se clicou mais de 15 vezes
+
+
+
+13. Crie um programa o qual:
+
+a) Tenha o seguinte texto no topo: "Valor guardado: R$0.00"
+
+b) Tenha os botões "Guardar R$5,00" e "Gastar R$10,00". Ao clicar neles, o valor guardado aumenta ou diminui conforme o texto do botão indica
+
+c) Quando o valor guardado estiver em 0 ou mais, exiba abaixo da frase de a) a frase, na cor azul, "Finanças OK"!
+
+d) Caso o valor guardado passe de 100, exiba abaixo da frase de c) a frase "#ostentação"
+
+e) Quando o valor guardado for menor que 0, exiba abaixo da frase de a) a frase, na cor vermelha, "Finanças em perigo"!
+
+f) Caso o valor guardado seja menor que -20, exiba abaixo da frase de e) a frase "Seu nome vai ficar sujo, hein?"
+
+
+
+14. Crie um programa o qual:
+a) Tenha o seguinte texto no topo: Vida do Lutador: 1000
+b) Abaixo do texto tenha uma foto de um Lutador em ótima condição
+c) Tenha os botões "Apanhar" e "Concentrar força"
+d) Ao clicar no "Apanhar", a vida do Lutador reduz em 100
+e) Ao clicar no "Concentrar força", a vida do Lutador aumenta em 5%
+f.A) Caso a vida do lutador chegue em 0 ou menos, exibir, abaixo do texto de a) a frase Lutador já era! e a foto do Lutador deve mudar para o mesmo personagem, mas todo machucado. Enquanto não chegar em 0, sempre que apanhar ou concentrar força, exiba, no mesmo lugar, a frase Lutador ainda vivo!
+f.B) Caso a vida seja 0 ou menos, nenhum dos botões deve mais funcionar

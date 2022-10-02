@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BOM DOCE</title>
+</head>
+<body>
+    Quantidade de chocolates comprados: <input type="text" id="in_qtd">
+    <button onclick="compra()"> Compra</button>
+    <div id="div_exibir"></div>
+</body>
+</html>
+<script>
+    function compra(){
+        var chocolates= Number(in_qtd.value)
+        
+
+        if(chocolates >12){
+            valor = chocolates*2.50
+            div_exibir.innerHTML=`O valor da sua compra foi de ${valor}`
+        } else {
+            var valor= chocolates*3.00
+            div_exibir.innerHTML=`O valor da sua compra foi de ${valor}`
+        }
+
+    }
+</script>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="exercicio7.CSS">
+    <title>Banco Itado </title>
+</head>
+<body>
+    Saldo da conta: <input type="text" id="in_saldo">
+    Valor do débito: <input type="text" id="in_valor">
+    <button onclick="analisar()"> Analisar conta</button>
+    <div id="div_exibir"></div>
+    <div id="div_negativo" class="estilo"></div>
+</body>
+</html>
+
+<script>
+    function analisar(){
+        var saldo= Number (in_saldo.value)
+        var valor= Number (in_valor.value)
+        var total= saldo-valor
+
+        if (total>=0){
+        div_exibir.innerHTML= `O saldo da conta corrente é ${total}`
+        }
+
+        if (total<0){
+            div_negativo.innerHTML = `O saldo da conta corrente é ${total}`
+        }
+    }
+</script>

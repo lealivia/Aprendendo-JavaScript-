@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="exercicio6.CSS">
+    <title>Financiamento </title>
+</head>
+
+<body>
+    Informe sua renda familiar: <input type="text" id="in_renda"><br><br>
+    Informe o valor da prestação: <input type="text" id="in_prestacao"> <br> <br>
+    <button onclick="verificar()"> Verificar financiamento</button>
+    <div id="div_exibir" class="estilo"></div>
+
+</body>
+
+</html>
+<script>
+    function verificar() {
+        var renda = Number(in_renda.value)
+        var prestacao = Number(in_prestacao.value)
+        var total = (prestacao / renda) * 100
+        var desconto = 100 * 0.30
+
+        div_exibir.innerHTML = (`A prestação corresponde a ${total}% da renda familiar`)
+
+        if (total > desconto)
+            div_exibir.innerHTML = (`será necessário complementar a renda familiar`)
+
+    }
+</script>
