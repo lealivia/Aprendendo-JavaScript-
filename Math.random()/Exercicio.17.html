@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 17</title>
+</head>
+<body>
+    <h2>sortear número</h2>
+     <button onclick="sortear()">Sortear Número</button> <br>
+     <div id="div_exibir"></div>
+</body>
+</html>
+<script>
+    function sortear(){
+        var sorteio = parseInt(-30 + Math.random() * (-9+30))
+        div_exibir.innerHTML=``
+        if(sorteio % 2 == 0){
+            div_exibir.innerHTML=`Números pares: ${sorteio}<br> Números ímpares: 0`
+        }else{
+            div_exibir.innerHTML=`Números pares:0 <br> Números ímpares: ${sorteio}`
+        }   
+    }
+</script>

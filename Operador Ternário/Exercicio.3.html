@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 3</title>
+</head>
+<body>
+    <input placeholder="Insira sua idade" id="in_idade" onkeyup="verificar()"> <br>
+    <div id="div_exibir" style="display: none;">
+          <br> 1. Já passou pela infância: <b id="div_infancia"></b> <br> 
+               2. Já passou pela adolescência: <b id="div_adolescencia"></b><br>
+               3. Já é um idoso:  <b id="div_idoso"></b>  <br>
+               4. TOTAL DE PONTOS: <b id="div_pontos"></b> <br> 
+            </div>
+</body>
+</html>
+<script>
+    function verificar(){
+        var idade =  Number(in_idade.value)
+        var infancia = idade >0
+        var adolescencia = idade >12
+        var idoso = idade >= 65
+
+        var pontos = 0
+
+        exibir = idade 
+
+        pontos+= infancia ? 10 : 0
+        pontos+= adolescencia ? 20 : 0
+        pontos += idoso ? 50 : 0
+
+        div_exibir.style.display = 'block'
+
+        div_infancia.innerHTML = infancia
+        div_adolescencia.innerHTML = adolescencia
+        div_idoso.innerHTML = idoso
+        div_pontos.innerHTML = pontos 
+
+      
+    
+
+    }
+</script>

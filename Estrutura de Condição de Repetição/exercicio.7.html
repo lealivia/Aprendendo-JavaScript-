@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 7</title>
+</head>
+<body>
+    <input placeholder="Digite um número entre 20 e 100" id="in_numero"> <br><br>
+    <button onclick="multiplo()">Adoro múltiplos de 5</button> <br><br>
+    <div id="div_exibir"></div>
+
+</body>
+</html>
+<script>
+    function multiplo(){
+        var numero = Number (in_numero.value)
+        contador = 0
+        div_exibir.innerHTML=``
+        
+            while(contador <= numero){
+            div_exibir.innerHTML+=`<br>${contador}<br>`
+            contador = contador + 5
+        
+        }
+    
+    }
+
+</script>

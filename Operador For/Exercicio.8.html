@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 8</title>
+</head>
+<body>
+    Quantas coca-cola ele acha que já bebeu na vida: <input type="number" id="in_Qcoca"> <br>
+    <button onclick="ver()">Ver a quantidade</button><br>
+    <div id="div_exibir"></div>
+</body>
+</html>
+<script>
+    function ver(){
+        var Qcoca = Number(in_Qcoca.value)
+        div_exibir.innerHTML=``
+        
+        for(var contador = 0; contador<Qcoca; contador++){
+
+            div_exibir.innerHTML+=`<img src= "https://imgs.extra.com.br/1505927937/1xg.jpg?imwidth=500" width= 150px alt="">`
+        }
+
+    }
+
+</script>

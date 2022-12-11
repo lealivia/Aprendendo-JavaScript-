@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 7</title>
+</head>
+<body>
+    <h2>filme que mais gosta </h2> 
+    
+    Informe os filmes que mais gosta: <input type="text" id="in_nome" ><br><br>
+    <button onclick="cadastrar()"> Cadastrar </button><br>
+    <div id="div_exibir" ></div>
+</body>
+</html>
+<script>
+    var filmes=[]
+
+    function cadastrar(){
+        div_exibir.innerHTML=``
+        filmes.push(in_nome.value)
+
+        for(i=0; i<filmes.length; i++){
+
+            var objeto = filmes[i] 
+            if(i % 2 == 0){
+                div_exibir.innerHTML+=`<span style="color: red;">${i+1} ${objeto} <br></span>`
+            }else{
+              div_exibir.innerHTML+=`<span style="color: blue;"> ${i+1} ${objeto} <br></span>`
+            }
+        }
+
+
+
+    }
+</script>
+<!-- Crie um programa no qual o usuário informa os nomes dos filmes que mais gosta. Ele digita e clica em "Cadastrar".
+Na medida em que vai cadastrando, os filmes vão aparecendo um abaixo do outro abaixo do botão. SÓ QUE, aparecem na cor azul, depois vermelho, depois azul, depois vermelho, e assim por diante.-->

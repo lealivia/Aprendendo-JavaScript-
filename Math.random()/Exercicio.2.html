@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exercicio 2</title>
+  </head>
+  <body>
+    <h2>Sortear Time</h2>
+    <button onclick="sortear()">Sortear Time</button> <br /><br />
+    <div id="div_exibir"></div>
+  </body>
+</html>
+<script>
+  function sortear() {
+    var sorteio = parseInt(Math.random() * 4);
+
+    div_exibir.innerHTML = ``;
+    if (sorteio == 1) {
+      div_exibir.innerHTML =
+        '<img src="https://a.espncdn.com/combiner/i?img=/i/teamlogos/soccer/500/874.png" width="150px">';
+    } else if (sorteio == 2) {
+      div_exibir.innerHTML =
+        '<img src="https://a.espncdn.com/combiner/i?img=/i/teamlogos/soccer/500/2026.png" width="150px">';
+    } else if (sorteio == 3) {
+      div_exibir.innerHTML =
+        '<img src="https://a.espncdn.com/i/teamlogos/soccer/500/2029.png" width="150px">';
+    } else {
+      div_exibir.innerHTML =
+        '<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/35/Santos_logo.svg/1200px-Santos_logo.svg.png" width="150px">';
+    }
+  }
+</script>

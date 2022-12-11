@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>Pontos do Jogador:</div>
+    <div>Pontos do Adversário:</div>
+    <button onclick="simular()">Simular Batalha</button><br>
+    
+    <div id="div_imagem">  
+        <img id="imagem_jogador" src="" width="200px"></img> VS
+        <img id="imagem_adversario" src="" width="200px"> </img> <br>
+    </div>
+    
+    <div id="div_exibir"></div><br>
+    <div id="div_batalha1"></div>
+   
+    
+</body>
+</html>
+<script>
+    var cartas=[
+        {carta:'./cartas/wolverine.png',
+        força: 2,
+        resistência:3},
+        {carta:'./cartas/viuva_negra.png',
+        força: 2,
+        resistência:1},
+        {carta:'./cartas/venom.png',
+        força: 3,
+        resistência:1},        
+        {carta:'./cartas/thor.png',
+        força: 3,
+        resistência:4},
+        {carta:'./cartas/sr_fantastico.png',
+        força: 3,
+        resistência:2},
+        {carta:'./cartas/mulher_invisivel.png',
+        força: 3,
+        resistência:2},
+        {carta:'./cartas/mercurio.png',
+        força: 1,
+        resistência:2},
+        {carta:'./cartas/homem_de_ferro.png',
+        força: 5,
+        resistência:0},
+        {carta:'./cartas/deadpool.png',
+        força: 1,
+        resistência:1},
+        {carta:'./cartas/capitao_america.png',
+        força: 3,
+        resistência:3}
+    ]
+
+
+    function simular(){
+        var sorteio_jogador = parseInt(Math.random()*cartas.length)
+        var sorteio_adversario = parseInt(Math.random()*cartas.length)
+
+        imagem_jogador.src=cartas[sorteio_jogador].carta
+        imagem_adversario.src=cartas[sorteio_adversario].carta
+        
+    
+        
+    if(sorteio_jogador == sorteio_adversario){
+    sorteio_adversario = parseInt(1+Math.random()*cartas.length)
+    imagem_adversario.src=cartas[sorteio_adversario].carta
+    }
+    
+    for (let index = 0; index < cartas.length; index++) {
+            var jogador = cartas[index]        
+    }
+    
+
+    for(var index=0; index< cartas.length; index++){
+        var adversario= cartas[index]
+    }
+
+
+
+    
+    console.log(`Jogador${jogador.força}`)
+    
+    var batalhaJogador= (jogador.força / adversario.resistência).toFixed(0)
+
+    var batalhaAdversario=(jogador.resistência / adversario.força).toFixed(0)
+
+    var dano_Jogador=0
+    var dano_Adversario=0
+    var contador_jogador = 0
+    var contador_adversario = 0
+    var empate = 0
+
+    console.log(`Jogador:${batalhaJogador}`)
+    console.log(`adversario: ${batalhaAdversario}`)
+    
+
+        if (jogador.força > adversario.resistência) {
+          dano_Adversario = batalhaJogador 
+       }
+
+       if(adversario.força> jogador.resistência){
+        dano_Jogador = batalhaAdversario
+       }
+
+       if(dano_Jogador > dano_Adversario){
+        div_exibir.innerHTML="O adverversário venceu!"
+        contador_adversario+3
+       }
+       
+       if(dano_Jogador < dano_Adversario){
+        div_exibir.innerHTML="O Jogador venceu!"
+        contador_jogador+3
+       }
+
+       if(dano_Adversario== dano_Jogador){
+        div_exibir.innerHTML=`Empate`
+        empate+1
+       }
+
+       if(contador_jogador> contador_adversario){
+        div_exibir.innerHTML=`<span style "color: green">O jogador venceu a disputa dessa batalha!</span>`
+       }
+
+       
+
+
+    }
+
+
+
+
+</script>

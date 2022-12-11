@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Cálculo de desconto</h2>
+
+    Qual seu salário? <input id="in_salario">
+    <br>
+    <button onclick="ver_desconto ()"> Ver desconto </button>
+    <div id="div_salario"></div>
+    <button onclick="analisar ()"> Analisar </button>
+    <div id="div_analise"></div>
+</body>
+</html>
+<script>
+    function ver_desconto(){
+        var salario = Number(in_salario.value)
+
+        if ( salario>7000) {
+            salario = salario - 200
+        }
+
+ div_salario.innerHTML=`Salário líquido: R$${salario}`
+
+    }
+
+    function analisar(){
+        div_analise.innerHTML =""//Limpando a div 
+        
+        var salario= Number(in_salario.value)
+
+        if(salario <2000){
+            div_analise.innerHTML += "É menor que 2000 <br>"
+        }
+
+        if(salario <=2000){
+            div_analise.innerHTML += "É menor ou igual que 2000 <br>"
+        }
+
+
+        
+        if(salario >5000){
+            div_analise.innerHTML += "É maior 5000 <br>"
+        }
+
+        
+        if(salario == 4000)//o sinal de == pergunta se o da direita for igual ao da esquerda 
+        {
+            div_analise.innerHTML += "É igual a 4000 <br>"
+        }
+
+        if(salario != 8000) //o sinal de != pergunta se o da esquerda for diferente da direita 
+        {
+            div_analise.innerHTML += "Não é igual a 8000 <br>"
+        }
+
+ 
+ 
+    }
+
+</script>

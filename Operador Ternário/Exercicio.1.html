@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 1</title>
+</head>
+<body>
+    <input placeholder="Insira a frequência do aluno" id="in_frequencia" onkeyup="verificar()"><br>
+    <input placeholder="Insira a 1° nota  do aluno" id="in_nota1" onkeyup="verificar()"><br>
+    <input placeholder="Ïnsira a 2° nota do aluno" id="in_nota2" onkeyup="verificar()"> <br>
+    <div id="div_exibir"></div>
+</body>
+</html>
+<script>
+    function verificar(){
+        var frequencia = Number(in_frequencia.value)
+        var nota1 = Number(in_nota1.value)
+        var nota2 = Number(in_nota2.value)
+        var media = nota1*nota2/2
+
+        var exibir = media>= 6 && frequencia >= 75 ? 'Parabéns! Você passou' : 'Tente outra vez' 
+
+        div_exibir.innerHTML= exibir
+    }
+</script>

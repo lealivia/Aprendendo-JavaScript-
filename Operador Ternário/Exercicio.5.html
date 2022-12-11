@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 5</title>
+</head>
+<body>
+     <input placeholder="Quantidade de chocolates comprados:" id="in_qtd">
+    <button onclick="compra()"> Compra</button>
+    <div id="div_exibir"></div>
+</body>
+</html>
+<script>
+    function compra(){
+        var chocolate= Number(in_qtd.value)
+        var valor1 = chocolate*2.50
+        var valor2 = chocolate*3.00
+
+
+        var exibir = chocolate > 12 ? `O valor da sua compra foi de ${valor1}` : `O valor da sua compra foi de ${valor2}`
+
+
+        div_exibir.innerHTML= exibir
+    }
+</script>

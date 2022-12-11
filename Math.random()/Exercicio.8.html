@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 8</title>
+</head>
+<body>
+    <h2>Nota e frequência do aluno</h2>
+
+    <button onclick="gerar_nota()">Gerar uma nota de aluno entre 0 e 10</button> <br><br>
+    <button onclick="gerar_freq()">Gerar uma frequência de aluno entre 0 e 100</button> <br><br>
+    <button onclick="aprovado()"> Aprovado?</button><br><br>
+    <div id="div_exibir"></div>
+    <div id="div_exibir1"></div>
+</body>
+</html>
+<script>
+    
+    var resultado1=0
+    var resultado2=0
+    
+    function gerar_nota(){
+        var sorteio1 = parseInt(Math.random()*10).toFixed(2)
+        div_exibir.innerHTML=``
+        div_exibir.innerHTML+=`${sorteio1}<br>`
+        resultado1 = sorteio1
+    }
+    
+    function gerar_freq(){     
+        var sorteio2 = parseInt(Math.random()*100).toFixed(2)
+        div_exibir1.innerHTML=``
+        div_exibir1.innerHTML+= `${sorteio2}<br>`
+        resultado2= sorteio2
+    }
+
+
+    function aprovado(){      
+        if(resultado1 >5 && resultado2 > 70){
+            alert(`Aluno aprovado!`)
+        }else{
+            alert(`Aluno Reprovado`)
+        }
+    }
+</script>

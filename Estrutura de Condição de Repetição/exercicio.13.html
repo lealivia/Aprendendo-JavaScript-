@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 13</title>
+</head>
+<body>
+    Escolha um número da tabuada de 2 ao 9: <select id="sel_tabuada">
+        <option value="">--Selecione--</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+        <option value="6">6</option>
+        <option value="7">7</option>
+        <option value="8">8</option>
+        <option value="9">9</option>
+    </select><br><br>
+
+    Selecione até que número deseja que a tabuada continue <input type="number" id="in_numero"> <br><br>
+    <button onclick="tabuada()">Ver tabuada</button> <br><br>
+    <div id="div_exibir"></div>
+</body>
+</html>
+<script>
+    function tabuada(){
+        var tabuada = sel_tabuada.value
+        var numero = Number (in_numero.value)
+        contador = 1
+        div_exibir.innerHTML=""
+
+        if (tabuada == ""){
+            div_exibir.innerHTML=""
+        }
+
+        while(contador <= numero){
+        var resultado = tabuada*contador
+
+        if (resultado % 2 != 0 ){
+            div_exibir.innerHTML+=`${tabuada} x ${contador} = <div style="color:red;">${resultado}</div>`
+            contador++
+        }else{
+            div_exibir.innerHTML+=`${tabuada} x ${contador} = <div style="color:blue;">${resultado}</div>`
+            contador++
+        }
+        
+    }
+}
+</script>

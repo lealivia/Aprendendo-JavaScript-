@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 15</title>
+</head>
+
+<body>
+    <input type="text" placeholder="Digite sua idade" id="in_idade" onkeyup="idade()"><br>
+    <div id="div_exibir"></div>
+</body>
+
+</html>
+
+<script>
+    function idade() {
+        var idade = Number(in_idade.value)
+        var contador = 0
+
+        div_exibir.innerHTML = ``
+        
+        
+            while (contador <= idade) {
+             div_exibir.innerHTML += `${contador}`
+             contador++
+
+            if (idade >= 0 && idade <= 4) {
+                div_exibir.innerHTML += ` Primeira infância <br>`
+            }
+            if (idade > 4 && idade <= 6) {
+                div_exibir.innerHTML += ` Pré-escola <br>`
+            }
+            if (idade > 6 && idade <= 10) {
+                div_exibir.innerHTML += ` Segunda infância <br>`
+            }
+            if (idade > 10 && idade <= 18) {
+                div_exibir.innerHTML += ` Adolescência <br>`
+            }
+            if (idade > 18 && idade <= 50) {
+                div_exibir.innerHTML += ` Adulto <br>`
+            }
+
+            if (idade > 50 && idade <= 100) {
+                div_exibir.innerHTML += ` Melhor idade <br>`
+            }
+
+            if (idade > 100) {
+                div_exibir.innerHTML += ` Matusalém <br>`
+            }
+
+        }
+    }
+</script>

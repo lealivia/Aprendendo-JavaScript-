@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 11</title>
+</head>
+<h2>jo ken po</h2>
+<button onclick="jogar()">Jogar</button>
+<div id="div_exibir"></div> 
+<div id="div_exibir1"></div>
+<div id="div_resultado"></div>
+
+
+</body>
+
+</html>
+<script>
+    function jogar() {
+        var sorteio1 = parseInt(1+Math.random() * 3)
+        var sorteio2 = parseInt(1+Math.random() * 3)
+
+
+        if (sorteio1 == 1) {
+            div_exibir.innerHTML = `<img src="https://images.pexels.com/photos/2363901/pexels-photo-2363901.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" height= 200px alt=""> `
+        } else if (sorteio1 == 2) {
+            div_exibir.innerHTML = `<img src="https://img.freepik.com/fotos-gratis/vista-do-papel-amarrotado-branco_1194-7544.jpg?w=2000" height= 200px alt="">`
+        } else {
+            div_exibir.innerHTML = `<img src="https://33622.cdn.simplo7.net/static/33622/sku/tesouras-e-alicates-tesoura-multiuso-16-cm-artepunto--p-1598299879312.png" height= 200px alt="">`
+        }
+        if (sorteio2 == 1) {
+            div_exibir1.innerHTML = `<img src="https://images.pexels.com/photos/2363901/pexels-photo-2363901.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" height= 200px alt=""> `
+        } else if (sorteio2 == 2) {
+            div_exibir1.innerHTML = `<img src="https://img.freepik.com/fotos-gratis/vista-do-papel-amarrotado-branco_1194-7544.jpg?w=2000" height= 200px alt="">`
+        } else {
+            div_exibir1.innerHTML = `<img src="https://33622.cdn.simplo7.net/static/33622/sku/tesouras-e-alicates-tesoura-multiuso-16-cm-artepunto--p-1598299879312.png" height= 200px alt="">`
+        }
+
+        if (sorteio1 == sorteio2){
+            div_resultado.innerHTML = ""
+            div_resultado.innerHTML = "Empate! Jogue novamente!"
+            
+        } else if (sorteio1 == 1 && sorteio2 == 3 || sorteio1 == 3 && sorteio2 == 1){
+            div_resultado.innerHTML = ""
+            div_resultado.innerHTML = `Pedra quebra a tesoura`
+        }else if (sorteio1 == 3 && sorteio2 == 2 || sorteio1 == 2 && sorteio2 == 3){
+            div_resultado.innerHTML = ""
+            div_resultado.innerHTML = `Tesoura corta o papel`
+        }else if (sorteio1 == 2 && sorteio2 == 1 || sorteio1 == 1 && sorteio2 == 2){
+            div_resultado.innerHTML = ""
+            div_resultado.innerHTML = `Papel cobre a pedra`
+        }
+    }
+    /*     var imagem 
+       if(sorteio == 1){
+        imagem = img1
+       }else {
+        imagem = img2
+       }
+
+       img.src = `${imagem}.jpg`
+
+       var imagem1 = img1.src
+       var imagem2 = img2.src
+
+       var vencedpr
+       var mao_vence
+       var mao_perde
+       var motivo
+
+       if(imagem1 == imagem2){
+        div_.innerHTML=`Empate! jogue novamente`
+       }else{
+        if (imagem1.indexOF('pedra.jpg')>0){
+            if(imagem2.indexOf('papel.jpg')>0){
+                vencedor= 2
+                mao_vence = `Papel`
+                mao_perde = `Pedra`
+                motivo= `Cobre`
+        }
+       }
+       
+       div_inner.HTML='O ${vencedor} venceu porque ${mao_vence} ${motivo} ${mao_perde}'
+*/
+</script>
+</body>
+</html>

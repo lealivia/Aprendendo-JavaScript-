@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2> Como está seu humor </h2>
+
+    <button onclick="feliz()"> Feliz! </button>
+    <button onclick="neutro()"> neutro </button>
+    <button onclick="Triste()"> Triste </button>
+    <button onclick="Apagar()"> não quero dizer </button>
+    
+    <div id="div_humor"></div>
+
+</body>
+</html>
+
+<script>
+ function feliz() {
+
+    div_humor.innerHTML= 'A vida é bela'
+ }
+
+function neutro (){
+
+ div_humor.innerHTML= 'Vou levando'
+
+}
+
+function Triste (){
+
+div_humor.innerHTML= 'Oh vida ó céus'
+
+}
+
+function Apagar (){
+
+div_humor.innerHTML=''
+
+}
+</script>

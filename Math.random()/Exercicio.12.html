@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 12</title>
+</head>
+<body>
+    <h2>Número da sorte</h2>
+    Insira seu número da sorte: <input type="number" placeholder="0 até 100" id="in_nsorte"><br><br>
+    <button onclick="valendo()"> Valendo! </button> <br><br>
+
+</body>
+</html>
+<script>
+    var contador= 0
+    
+    function valendo(){
+        var numero= Number (in_nsorte.value)
+        contador=1    
+        
+        while(sorteio != numero){
+            var sorteio = parseInt(Math.random()*101)
+            contador++
+        }
+        
+            alert(`Foram necessários ${contador} sorteios`)
+    
+    }
+</script>

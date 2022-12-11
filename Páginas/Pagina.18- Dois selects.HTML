@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <select  id="sel_proteina" onchange="combo()">
+        <option value="">--Selecione--</option>
+        <option value="Ovo">Ovo </option>
+        <option value="Soja">Soja</option>
+        <option value="Carne">Carne</option>
+    </select> <br> <br>
+
+    <select id="sel_sobremesa" onchange="combo()">
+        <option value="">--Selecione--</option>
+        <option value="Pudim">Pudim</option>
+        <option value="Petit Gateau">Petit Gateau</option>
+        <option value="Brigadeiro de Soja">Brigadeiro de Soja</option>
+    </select> <br>
+</body>
+</html>
+<script>
+    function combo(){
+        var proteina = sel_proteina.value
+        var sobremesa = sel_sobremesa.value
+
+        if (proteina == '' && sobremesa ==''){
+            alert('')
+        }
+
+        if (proteina == "Soja" && sobremesa == "Brigadeiro de Soja"){
+        alert(`Você poderia ser vegano(a)`)
+        }else {
+            alert(`você NÃO pode ser vegano(a)`)
+        }
+    }
+</script>

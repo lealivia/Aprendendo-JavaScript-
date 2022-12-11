@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 5</title>
+</head>
+<body>
+    <h2>Jo ken Po</h2>
+
+    <button onclick="jogar()">Jogar</button><br>
+    <div id="div_exibir"></div>
+</body>
+</html>
+<script>
+    function jogar(){
+        var sorteio =  parseInt(1+Math.random() *3)
+
+        if(sorteio == 1){
+            div_exibir.innerHTML= `<img src="https://cdn.awsli.com.br/1634/1634422/produto/81748105/da9befcc58.jpg" width="200px">`
+        }else if (sorteio == 2){
+            div_exibir.innerHTML=`<img src="https://www.coladaweb.com/wp-content/uploads/2014/12/historia-papel.jpg" width="200px">`
+        }else{
+            div_exibir.innerHTML=`<img src="https://reidacutelaria.vteximg.com.br/arquivos/ids/171665-654-654/660-08-SR.jpg?v=637293891564130000" width="200px">`
+        }
+    }
+</script>

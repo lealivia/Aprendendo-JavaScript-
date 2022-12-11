@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exercicio 1 J-son</title>
+  </head>
+  <body>
+    <h2>Loja de Produtos do seu Vand Edor</h2>
+    Insira o nome do produto: <input type="text" id="in_nome" />
+    <select id="sel_tipo">
+      <option value="">--selecione uma opção--</option>
+      <option value="Gerais">Gerais</option>
+      <option value="Alimentos">Alimentos</option>
+      <option value="Eletrônicos">Eletrônicos</option></select
+    ><br />
+    Insira o preço do produto: <input type="number" id="in_preco" /><br />
+    <button onclick="registrar()">Registrar Produto</button>
+    <button onclick="verificar()">Verificar Produtos</button><br /><br />
+    <div id="div_exibir"></div>
+    <br />
+    <br />
+
+    <h2>Filtrar pesquisa</h2>
+    Pesquisar por produto <input type="text" id="in_pesquisar" />
+    <button onclick="procurar()">Procurar</button>
+    <div id="div_pesquisa"></div>
+  </body>
+</html>
+<script>
+  var produto = [];
+
+  function registrar() {
+    div_exibir.innerHTML = ``;
+    if (produto.nome == "" || produto.preco == "" || produto.tipo == "") {
+      alert(
+        `Inválido! Verifique o preenchimento dos campos e tente novamente!`
+      );
+    } else {
+      produtos = {
+        nome: in_nome.value,
+        tipo: sel_tipo.value,
+        preco: in_preco.value,
+      };
+
+      produto.push(produtos);
+    }
+  }
+  function verificar() {
+    div_exibir.innerHML = ``;
+
+    if (produto.length < 1) {
+      alert(`Não há produtos registrados na lista!`);
+    } else {
+      for (i = 0; i < produto.length; i++) {
+        var objeto = produto[i];
+        div_exibir.innerHTML += `Produto: ${objeto.nome} <br> Tipo:${objeto.tipo}<br>  Preço: R$ ${objeto.preco} <br> <br>`;
+      }
+    }
+  }
+
+  function procurar() {
+    div_pesquisa.innerHMTL = "";
+
+    var filtros = [];
+    for (var i = 0; i < produto.length; i++) {
+      var filtro = produto[i].nome.indexOf(in_pesquisar.value);
+
+      console.log("filtro: ", filtro);
+      if (filtro == 0) {
+        filtros.push(produto[i]);
+        div_pesquisa.innerHTML += `Produto:${produto[i].nome} <br>`;
+      }
+    }
+    console.log(filtros);
+    if (filtros.length == 0) {
+      div_pesquisa.innerHTML = `Não há nenhum produto com este nome registrado!`;
+    }
+  }
+
+  /*function procurar(){
+          var objeto= procurar.length[i]
+         filtro = produto.indexOf(in_pesquisar.value)
+
+          for(i= 0; i<filtro.length; i++){
+            if(produto.length <0 ){
+              div_pesquisa.innerHTML=`Não há nenhum produto com este nome registrado`
+            }
+
+
+          }
+          }*/
+</script>

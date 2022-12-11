@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 2</title>
+</head>
+<body>
+    <input placeholder="Insira seu login" id="in_login" onkeyup="verificar()"><br>
+    <input placeholder="Insira sua senha" id="in_senha" onkeyup="verficar()"> <br>
+    <input placeholder="Insira seu código de segurança" id="in_codigo" onkeyup="verificar()"> <br>
+    <div id="div_exibir"></div>
+</body>
+</html>
+<script>
+    function verficar(){
+        var login = in_login.value
+        var senha = in_senha.value
+        var codigo = Number(in_codigo)
+
+        var exibir = login == 'SPTECH' && senha == 'SCHOOL' && codigo == 595 ? 'usuário autenticado com sucesso!' : 'Falha na autenticação'
+
+        div_exibir.innerHTML= exibir
+    }
+</script>

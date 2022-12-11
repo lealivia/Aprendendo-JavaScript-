@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 2</title>
+</head>
+<body>
+    Destino de Viagem <input type="text" id="in_viagem">
+    <button onclick="adicionar()">Adicionar</button>
+    <button onclick="primeira()">Primeira viagem</button>
+    <button onclick="terceira()">Terceira viagem</button>
+    <button onclick="ultima()">Última viagem</button>
+    <div id="div_exibir"></div>
+
+</body>
+</html>
+<script>
+var viagem = []
+
+
+    function adicionar(){
+        viagem.push(in_viagem.value)
+        var frase = in_viagem.value
+        frase = ""
+        
+    }
+
+    function primeira(){
+        var frase = in_viagem.value
+        if (frase == ''){
+            div_exibir.innerHTML='Ainda não viajou'
+        }else{
+            div_exibir.innerHTML= `A primeira viagem foi:${viagem[0]}`
+        }
+    }
+
+    function terceira(){
+        var frase = in_viagem.value
+        if (frase == ''){
+            div_exibir.innerHTML='Ainda não viajou'
+        }else{
+            div_exibir.innerHTML= `A terceira viagem foi: ${viagem[2]}`
+        }
+    }
+
+    function ultima (){
+        var frase = in_viagem.value
+        if (frase == ''){
+            div_exibir.innerHTML='Ainda não viajou'
+        }else{
+            div_exibir.innerHTML= `A última viagem foi: ${viagem [viagem.length-1]}`
+
+        }
+    }
+
+
+</script>
+<!--Crie um Programa o qual:
+
+a) Tenha um campo "Destino de viagem" e um botão "Adicionar"
+
+b) Ao clicar no botão, esse destino deve ser adicionado em algum lugar o qual o usuário não vê. Não existe problema em serem registrados valores repetidos
+
+c) Deve haver os botões:
+
+  "Primeira viagem" - Ao clicar nele, aparece abaixo o primeiro local cadastrado ou "ainda não viajou", caso nenhuma viagem tenha sido registrada
+
+  "Terceira viagem" - Ao clicar nele, aparece abaixo o 3º local cadastrado ou "ainda fez a 3ª viagem", caso não tenha feito 3 viagens ainda
+
+  "Última viagem" - Ao clicar nele, aparece abaixo o último local cadastrado ou "ainda não viajou", caso nenhuma viagem tenha sido registrada
+
+OBS: Obtenha esses três valores SOMENTE do vetor que criar

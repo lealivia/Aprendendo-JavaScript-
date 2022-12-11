@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 6</title>
+</head>
+<body>
+    <input placeholder="Digite o nome da pessoa que você mais ama na vida" type="text" id="in_nome"> <br><br>
+    <input placeholder="Digite o quanto você ama essa pessoa" type="number" id="in_quanto"><br><br>
+    <button  onclick="expressar()">Expressar amor</button> <br>
+    <div id="div_exibir"></div>
+
+</body>
+</html>
+
+<script>
+    function expressar(){
+        var nome = in_nome.value
+        var quantidade = Number (in_quanto.value)
+        
+        clique = 0
+        contador= 1
+        
+        div_exibir.innerHTML=``
+        
+        while(clique <= quantidade){
+        div_exibir.innerHTML+=`<br>${contador}. ${nome} eu te amo! Sempre lembre disso! <br>`
+        clique++
+        contador++
+        }
+    }
+</script>

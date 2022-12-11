@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 10</title>
+</head>
+<body>
+    Informe quanto depósitos fez no banco: <input type="number" id="in_deposito"> <br>
+    Informe a quantia desses depósitos: <input type="number" id="in_quantia"> <br>
+    <button onclick="acompanhar()"> Acompanhar grana</button><br>
+    <div id="div_exibir"></div>
+</body>
+</html>
+<script>
+    function acompanhar(){
+        var deposito = Number(in_deposito.value)
+        var quantia = Number (in_quantia.value)
+        var total = 0
+
+        div_exibir.innerHTML=``
+        for (var contador = 1; contador<=deposito; contador++){
+            total+=quantia
+            div_exibir.innerHTML+=`${contador}° Mês: ${total} <br>`
+        }
+    }
+</script>

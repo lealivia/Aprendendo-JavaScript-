@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Qual fruta você gosta?</h2>    
+
+    <select id="sel_fruta" onchange="ver_fruta()">
+        <option value="">- Selecione a fruta -</option>
+        <option value="morango.jpg">Morango</option>
+        <option value="uva.jpg">Uva</option>
+        <option value="manga.jpg">Manga</option>
+        <option value="https://cdn.diferenca.com/imagens/limao-taiti-cke.jpg">Limão</option>
+        
+    </select>
+    <br>
+    <img src="" id="img_fruta" style="height: 200px;">
+
+</body>
+</html>
+<script>
+    function ver_fruta() {
+        img_fruta.src = sel_fruta.value
+    }
+</script>

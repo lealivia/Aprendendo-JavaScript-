@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 9</title>
+</head>
+<body>
+    Quantas xícaras de café com leite já tomou na vida: <input type="number" id="in_Qxicaras"><br>
+    <button onclick="ver()">Ver a quantidade</button><br>
+    <idv id="div_exibir"></idv>
+    <img src="" alt="">
+</body>
+</html>
+<script>
+    function ver(){
+        var Qxicaras= Number (in_Qxicaras.value)
+        div_exibir.innerHTML=``
+
+        for(var contador = 0; contador < Qxicaras; contador++){
+        
+            div_exibir.innerHTML+=`<img src="https://bolosparavender.com.br/wp-content/uploads/2020/08/fazer-bolo-com-leite-em-po-da-certo-como-fazer.jpg" alt="" width="200px">`+ '<img src="https://thumbs.dreamstime.com/b/p%C3%B3-do-caf%C3%A9-na-colher-de-madeira-isolada-no-fundo-branco-83485944.jpg" width="200px">'+ '<img src="https://thumbs.dreamstime.com/b/p%C3%B3-do-caf%C3%A9-na-colher-de-madeira-isolada-no-fundo-branco-83485944.jpg" width="200px"> <br>'
+        }
+    }
+</script>

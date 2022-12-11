@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 5</title>
+</head>
+<body>
+    
+    <input placeholder="Insira o limite inferior" id="in_limiteInf"><br>
+    <input placeholder="Insira o limite superior" id="in_limite"><br>
+    <button onclick="contar()"> Contar</button>
+    <div id="div_exibir"></div>
+</body>
+</html>
+<script>
+
+    function contar(){
+     var limite = Number (in_limite.value)
+    var limiteInf= Number (in_limiteInf.value)
+        
+        div_exibir.innerHTML=``
+        
+        if(limite >100){
+            div_exibir.innerHTML=`O valor inserido é inválido, número tem que ser menor que 100!`
+        } 
+
+        if(limiteInf <=1){
+            div_exibir.innerHTML=`O valor inserido é inválido, ele deve ser maior que 1`
+        }else{
+
+        for(var contador=limiteInf; contador <=limite; contador++){
+
+            if(contador % 2 != 0){
+                div_exibir.innerHTML+=`${contador}<br>`
+            }
+        }
+        }
+    }
+    
+</script>

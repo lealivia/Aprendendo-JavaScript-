@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 6</title>
+</head>
+<body>
+    <h2>filme que mais gosta </h2> 
+    
+    Informe os filmes que mais gosta: <input type="text" id="in_nome" ><br><br>
+    <button onclick="cadastrar()"> Cadastrar </button><br>
+    <div id="div_exibir"></div>
+
+</body>
+</html>
+<script>
+    var filmes= []
+
+    function cadastrar(){
+    div_exibir.innerHTML=""
+    
+        var filme = in_nome.value
+        filmes.push(filme)
+        in_nome.value = ""
+
+        for(var i =0; i<filmes.length; i++){
+            var objeto= filmes[i]
+            div_exibir.innerHTML+=`${i+1}-${objeto}<br>`
+        }
+    }
+</script>
+
+<!--
+     Crie um programa no qual o usuário informa os nomes dos filmes que mais gosta. Ele digita e clica em "Cadastrar".
+Na medida em que vai cadastrando, os filmes vão aparecendo um abaixo do outro abaixo do botão.
+
+OBS. Tem que usar um vetor para guardar e mostrar os filmes. #ficaadica – Use uma estrutura de repetição (for/while) para mostrar os filmes na página.
+
+-->

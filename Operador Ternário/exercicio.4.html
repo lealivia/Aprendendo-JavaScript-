@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 4</title>
+</head>
+<body>
+         <input placeholder="Insira a frequência " id="in_frequencia"><br>
+         <button onclick="analisar()">Analisar frequência</button> <br>
+         <div id="div_exibir"></div>
+         <div id="div_imagem"></div>
+</body>
+</html>
+<script>
+    function analisar(){
+        var frequencia= Number (in_frequencia.value)
+
+        var exibir = frequencia < 50 ? `<br> <img src= https://img.freepik.com/fotos-gratis/turista-apontando-para-cima_1368-7017.jpg?w=2000" alt="" width="200px">` : `<br> <img src="https://blog.redebatista.edu.br/wp-content/uploads/2018/12/edd.jpg" alt="" width="200px">`
+
+    
+        div_exibir.innerHTML= exibir
+    }
+</script>

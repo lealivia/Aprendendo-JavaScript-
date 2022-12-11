@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 11</title>
+</head>
+<body>
+    <input type="number" placeholder="Insira a quantidade de titúlos mundiais da FIFA que seu time possui" id="in_quantidade"><br><br>
+    <button onclick="ver()">Ver troféus de mundiais FIFA</button><br><br>
+    <div id="div_exibir"></div>
+
+</body>
+</html>
+<script>
+    function ver(){
+        var quantidade = Number (in_quantidade.value)
+        var contador = 1
+
+        div_exibir.innerHTML=``
+
+        if(quantidade <= 0){
+            div_exibir.innerHTML= `<img src="https://pbs.twimg.com/media/EQmD_pFXkAE3cY_.jpg" width=200px >`
+        }
+
+        while(contador <= quantidade){
+        div_exibir.innerHTML+= `<img src= "https://cf.shopee.com.br/file/f4957cbcf401d373af4218e035197087" width=200px>`
+        
+        contador++
+    }
+
+    }
+    
+</script>

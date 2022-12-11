@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Avaliação continuada II</title>
+</head>
+<body>
+    <h2>Criar clones</h2><br><br>
+    Quantidade de energia: <input type="number"  id="in_energia"> <br><br>
+    Quantidade de clones: <input type="number"  id="in_clone"> <br><br>
+    Quantidade de clones por linha: <input type="number" id="in_linha"> <br><br>
+    <button onclick="criar()">Criar clones</button> <br><br>
+    <div id="div_exibir"></div>
+    
+</body>
+</html>
+<script>
+    function criar(){
+        var energia = Number (in_energia.value)
+        var clones = Number (in_clone.value)
+        var clinha = Number (in_linha.value)
+        var certa = clones*20
+        var contador = 0
+        var sobra = energia - (energia)
+        var percentual = (sobra /energia) *100
+        
+        div_exibir.innerHTML= ``
+        
+        if (energia >= 20 && energia <=5000 && clones >=0 && clones <=250 && clinha> 0 ){
+            
+            if(energia >= certa){
+
+            while(contador < clones){
+                contador++
+                div_exibir.innerHTML+=`<img src="https://preview.redd.it/tudjq02jost71.jpg?auto=webp&s=ed558eeba8ee7c136febe2cd0084d2ab3661b9eb" width=200px>`
+
+                if (contador % clinha == 0){
+                    div_exibir.innerHTML+=`<br>`
+            }
+            }  
+
+        }else{
+            alert(`Sem energia suficiente`)
+        } 
+
+        div_exibir.innerHTML+=`<br>
+        ANÁLISE DA GERAÇÃO DE CLONES <br>
+        Energia Inicial: ${energia}  <br>
+        Qtde de Clones: ${clones} <br>
+        Sobra de Energia: ${sobra} <br>`
+        
+        if(sobra > 1000 || clones > 50 && percentual >= 20){
+            div_exibir.innerHTML+=`PROVAVELMENTE VOCE VAI GANHAR`
+        }else if (sobra > 500 || clones > 20 && clones <= 50 && percentual >= 10){
+            div_exibir.innerHTML+=`A LUTA VAI SER MUITO BOA`
+        }else {
+            div_exibir.innerHTML+=`TORÇA PARA O ADVERSÁRIO SER FRAQUINHO"`
+        }
+        
+
+        }else{
+            alert(`ERRO NA ENTRADA DE DADOS – Energia tem que ser entre 20 e 5.000. Quantidade de Clones tem que ser entre 0 e 250. Quantidade de Clones por linha tem que ser maior que 0`)
+        }
+    }
+</script>

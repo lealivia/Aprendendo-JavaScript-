@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Página 8 - Variáveis</title>
+  </head>
+  <body>
+    Nota 1: <input type="text" id="ipt_nota_1" /> <br />
+    Nota 2: <input type="text" id="ipt_nota_2" /> <br />
+    Nota 3: <input type="text" id="ipt_nota_3" /> <br /><br />
+
+    <button onclick="calcular()">Calcular média</button>
+
+    <div id="div_mensagem"></div>
+  </body>
+</html>
+
+<script>
+  function calcular() {
+    /* 
+        Em programação, temos o conceito de "variável", que serve para armazenar algum valor na memória do computador durante a execução de 
+        um programa, como uma "caixa", que irá armazenar alguma coisa que pode ser usada a qualquer momento.
+        No Javascript, quando criamos variáveis, utilizamos a palavra reservada "var", com a estrutura:
+            
+            var nomeDaVariavel = valorDaVariavel
+            
+        -> "var" - indica para o javascript que uma variável está sendo criada/definida.
+        -> "nomeDaVariavel" - é o nome que será usado para referenciarmos o espaço da memória reservado pela variável.
+        -> "=" - o sinal de igual serve para atribuir um valor a uma variável (tudo que vier após o sinal será atribuído à variável).
+        -> "valorDaVariavel" - valor que será atribuído à variável (como um texto, número ou resultado de cálculo) para ser armazenado.
+
+        Exemplos de criação de variáveis: 
+            var nome = "João"
+            var idade = 25
+            var soma = 20 + 5
+            var texto = "Eu sou um texto"
+            var idadeSomada = idade + soma
+    */
+
+   var nota1 = Number(ipt_nota_1.value) 
+   var nota2 = Number(ipt_nota_2.value)
+   var nota3 = Number(ipt_nota_3.value)
+   // Acima, estamos criando variáveis de nota1, nota2 e nota3 usando o valor das inputs, já convertendo os textos para valores numéricos
+
+    var media = (nota1 + nota2 + nota3) / 3
+    // Acima, estamos usando as referências das variáveis "nota1", "nota2" e "nota3" que foram criadas anteriormente para criar uma nova variável "media"
+
+    div_mensagem.innerHTML = `Média usando variável: ${media}` 
+    // Acima, estamos usando a variável "media", interpolando no texto
+
+    media = (nota1 + nota2) / 2 
+    /*  Acima, estamos reatribuindo o valor da variável "media" que foi criada/definida na linha 47 (var media = (nota1 + nota2 + nota3) / 3)
+        Ao passar pela linha 51, a variável "media" sofre uma alteração, onde seu valor passa a ser uma média composta somente pela nota1 e nota2.
+        Não devemos colocar a palavra reservada "var" antes de reatribuir seu valor, pois a variável já existe no código, e a palavra "var" criaria novamente a variável.
+        Após a reatribuição de valor da variável "media", a qualquer momento que essa variavel for chamada, estará com seu valor atualizado.
+    */
+
+    div_mensagem.innerHTML += `<br>Média após alteração: ${media}`
+    // Acima, estamos usando a variável "media" após termos reatribuido seu valor, interpolando no texto
+  }
+
+  /*
+    As variáveis, só existirão dentro da função, entre o conjunto de { }, enquanto a função estiver sendo executada.
+    Portanto, se chamarmos alguma variável aqui, após o fechamento da função "calcular" na linha 62, ocorreria um erro no console, indicando que a variável não está definida.
+
+    alert(`Média usando variável: ${media}`)
+  */
+
+
+
+</script>

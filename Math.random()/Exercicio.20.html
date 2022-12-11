@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 20</title>
+</head>
+<body> 
+    <button onclick="jogar()">Jogador 1 jogar dadinho</button> <br><br>
+    <div id="div_exibir"></div>
+    <div id="div_exibir1"></div>
+</body>
+</html>
+
+<script>
+    var jogador1= 0
+    var jogador2 = 0
+    var empate = 0
+
+    function jogar(){
+        dado1= 1+ parseInt(Math.random()*6)
+        div_exibir.innerHTML=``
+        div_exibir.innerHTML= `${dado1}<br>`
+        
+        dado2= 1+ parseInt(Math.random()*6)
+        div_exibir1.innerHTML=``
+        div_exibir1.innerHTML+=`${dado2}<br>`
+
+        if(dado1 > dado2){
+            div_exibir1.innerHTML+=`<br>
+            jogador 1 está vencendo <br> `
+            jogador1++
+        }else if (dado2 > dado1){
+            div_exibir1.innerHTML+=`<br>
+            jogador 2 está vencedo! <br>`
+            jogador2++
+        }
+        if (dado1 == dado2){
+            div_exibir1.innerHTML+=`<br>
+            Jogo empatado!`
+            empate++
+        }
+
+div_exibir1.innerHTML+=`<br>
+Jogador 1:${jogador1}<br>
+Jogador 2:${jogador2}<br>
+Empate:${empate}
+`
+}
+
+
+</script>

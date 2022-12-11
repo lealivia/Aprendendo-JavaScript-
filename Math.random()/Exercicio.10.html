@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 10</title>
+</head>
+<body>
+    <h2>jogar dadinho</h2>
+
+    <button onclick="jogador1()">Jogador 1 jogar dadinho</button> <br><br>
+    <button onclick="jogador2()">Jogador 2 jogar dadinho</button> <br><br>
+    <div id="div_exibir"></div>
+    <div id="div_exibir1"></div>
+</body>
+</html>
+<script>
+    var dado1= 0
+     
+    var dado2 = 0
+
+    function jogador1(){
+        dado1= 1+ parseInt(Math.random()*6)
+         div_exibir.innerHTML=``
+         div_exibir.innerHTML= `${dado1}<br>`
+    }
+
+    function jogador2(){
+        dado2=1+ parseInt(Math.random()*6)
+        div_exibir1.innerHTML=``
+        div_exibir1.innerHTML+=`${dado2}`
+
+        if(dado1 > dado2){
+            div_exibir1.innerHTML+=`<br>
+            jogador 1 Venceu! `
+        }else if (dado2 > dado1){
+            div_exibir1.innerHTML+=`<br>
+            jogador 2 Venceu!`
+        }
+        if (dado1 == dado2){
+            div_exibir1.innerHTML+=`<br>
+            Empate!`
+        }
+    }
+
+</script>

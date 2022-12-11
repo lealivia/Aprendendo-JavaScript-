@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página 22</title>
+</head>
+<body>
+    
+    <h2>Manipulando outra input via JS</h2>
+    <input onkeyup="copiar()" placeholder="Texto" type="text" id="ipt_texto">
+    <input placeholder="Cópia" type="text" id="ipt_copia">
+
+</body>
+</html>
+
+<script>
+
+    function copiar() {
+        var padraoParaEncontrar = ' ';  // trecho a ser identificado dentro do texto
+
+        var valorParaSubstituir = '___'; // valor a ser substituido pelo trecho que identificamos 
+
+        var texto = ipt_texto.value;
+
+        /*  
+            Replace All -> "trocar todos" em PTBR
+            Dentro da variável "texto", encontre o trecho que eu passei no primeiro espaço e substitua pelo valor passado no segundo espaço
+            Neste caso, estamos trocando todos os espaços em branco (" ") por underlines ("___") ao digitar
+        */
+        var textoComUnderline = texto.replaceAll(padraoParaEncontrar, valorParaSubstituir);
+
+        ipt_copia.value = textoComUnderline;
+        // ao final, alteramos o valor da input "copia" via JS, usando o novo valor com underline após o replace
+    }
+
+</script>

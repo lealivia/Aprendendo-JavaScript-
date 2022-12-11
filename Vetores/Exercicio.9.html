@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 9</title>
+</head>
+<body>
+    <h2>Seus projetos</h2>
+
+    <input type="text" placeholder="Nome dos seus projetos" id="in_projeto">
+    <button onclick="registrar()">Registrar projeto</button><br>
+    <button onclick="mostrar()">Mostrar projeto</button>
+    <div id="div_exibir"></div>
+</body>
+</html>
+<script>
+    var projeto = []
+
+    function registrar(){
+        projeto.push(in_projeto.value)
+
+        for(i=1; i<projeto.length; i++){
+        
+            if (i>= 0 && i<=4){
+                div_exibir.innerHTML=` Você já fez ${i} projetos. Por isso você é um profissional Júnior <br>`
+           }else if(i>=5 && i<=12){
+            div_exibir.innerHTML=` Você já fez ${i} projetos. Por isso você é um profissional Pleno, desde o projeto ${projeto[4]}<br>`
+           }else{
+            div_exibir.innerHTML=` Você já fez ${i} projetos. Por isso você é um profissional Sênio, desde o projeto ${projeto[12]}<br>`
+           }
+
+            }
+    }
+
+    function mostrar(){
+        for(i=projeto.length; i>0; --i){
+            var objeto= projeto[i]
+
+            div_exibir.innerHTML+=`${i} - ${objeto}<br>`
+        }
+    }
+</script>
+<!--
+    a) Pergunte para o usuário o nome de cada projeto que já criou na vida. Ele digita e clica em "Registrar projeto". Na medida que ele vai cadastrando, verifique quantos projetos já foram cadastrados e exiba o seguinte texto abaixo:
+    
+    Você já fez X projetos. Por isso você é um profissional Z
+    
+    X é a quantidade de projetos e Z é seu nível de experiência, segundo estas regras:
+    
+      0 a 4: Júnior
+    
+      5 a 12: Pleno desde o projeto "nome do 5º projeto"
+    
+        u mais: Sênior desde o projeto "nome do 13º projeto"
+    
+    b)  Tenha um botão “Mostrar Projetos” que quando clicado mostra os projetos cadastrados, um abaixo do outro, em ordem inversa ao que foi cadastrado.
+-->

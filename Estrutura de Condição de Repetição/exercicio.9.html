@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 9</title>
+</head>
+<body>
+    <input type="number" placeholder="Insira um número" id="in_numero"><br><br>
+    <input type="text" placeholder="Insira uma frase" id="in_frase"><br><br>
+    <button onclick="papagaio()"> Papagaio </button> <br><br>
+
+</body>
+</html>
+<script>
+    function papagaio(){
+        var numero = Number (in_numero.value)
+        var frase = in_frase.value
+        var contador = 1
+
+        while(contador <= numero ){
+            alert(`${frase}`)
+            contador++
+        }
+    }
+</script>

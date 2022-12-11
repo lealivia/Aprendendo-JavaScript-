@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 3</title>
+</head>
+<body>
+    <h2>Jogar</h2>
+
+    <button onclick="jogar()">Jogar Dado</button> <br>
+    <div id="div_exibir"></div><br><br>
+</body>
+</html>
+<script>
+    function jogar(){
+        var  sorteio = 1+ parseInt(Math.random() * 6)
+        div_exibir.innerHTML=``
+
+        if (sorteio == 1){
+            div_exibir.innerHTML=`  <img src="https://images.vectorhq.com/images/previews/27e/dado-1-138329.png" width="120px">`
+        }else if (sorteio == 2){
+            div_exibir.innerHTML=`  <img src="https://images.vectorhq.com/images/previews/482/dado-2-138325.png" width="120px">`
+        } else if (sorteio == 3){
+            div_exibir.innerHTML=`  <img src="https://png-2.vector.me/files/images/3/2/323091/dado_3_preview" width="120px">`
+        }else if(sorteio == 4){
+            div_exibir.innerHTML=`  <img src="https://images.vectorhq.com/images/previews/6a9/dado-4-138319.png" width="120px">`
+        }else if(sorteio == 5){
+            div_exibir.innerHTML=`  <img src="https://images.vectorhq.com/images/previews/93c/dado-5-138316.png" width="120px">`
+        }else {
+            div_exibir.innerHTML=`  <img src="https://png.vector.me/files/images/3/2/323082/dado_6_preview" width="120px">`
+        }
+    }
+</script>

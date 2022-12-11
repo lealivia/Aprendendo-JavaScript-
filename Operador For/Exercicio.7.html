@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 7</title>
+</head>
+<body>
+    <input placeholder="Digite o limite inferior" type="number" id="in_limiteInf"><br>
+    <input placeholder="Digite o limite superior" type="number" id="in_limiteSup"><br>
+    <input placeholder="Digite um numero para teste entre 3 e 10" type="number" id="in_teste"><br>
+    <button onclick="contar()">Contar</button><br>
+    <div id="div_exibir"></div>
+</body>
+</html>
+<script>
+    function contar(){
+        var limiteInf = Number (in_limiteInf.value)
+        var limiteSup = Number (in_limiteSup.value)
+        var teste = Number(in_teste.value)
+
+        div_exibir.innerHTML=``
+        
+        if(limiteSup >100){
+            div_exibir.innerHTML=`O valor inserido é inválido, número tem que ser menor que 100!`
+        } 
+        if(limiteInf <=1){
+        div_exibir.innerHTML=`O valor inserido é inválido, ele deve ser maior que 1`
+        } 
+        if(limiteInf >1 && limiteSup <100 && teste >=3 && teste <= 10){
+            for(var contador = limiteInf; contador <limiteSup; contador++){
+                if(contador % teste == 0){
+                    div_exibir.innerHTML+=`${contador}<br>`
+                }
+            }
+        }
+        else{
+            div_exibir.innerHTML=`O valor do item superior tem que ser a partir 3 e o inferior tem que ser a partir de 10`
+
+        }
+
+    }
+</script>
